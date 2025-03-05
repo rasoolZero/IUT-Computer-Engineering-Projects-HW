@@ -1,0 +1,63 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/rasool/IUT/t4/FPGA/HWs/HW1/project_3
+T_opt
+!s110 1616960859
+VQMRnngoEbFibhOmB:=0190
+04 6 4 work TestQ4 fast 0
+=1-a81e84098b15-6060dd5b-1e5-359c
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+vSwitch
+!s110 1616960668
+!i10b 1
+!s100 ?E3oT;MXfU48b[>h<Y]Q11
+IKUmLgz<<TBnfWROQzILLG0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/rasool/IUT/t4/FPGA/HWs/HW1/project_4
+w1616960665
+8E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/Q4.v
+FE:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/Q4.v
+L0 2
+Z3 OL;L;10.6d;65
+r1
+!s85 0
+31
+!s108 1616960668.000000
+!s107 E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/Q4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/Q4.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@switch
+vTestQ4
+!s110 1616960850
+!i10b 1
+!s100 __j78O2PmZ:@bicm?nck;2
+I:6A8edj_e1CGPfaWa<B2]1
+R1
+R2
+w1616960844
+8E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/TestQ4.v
+FE:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/TestQ4.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1616960850.000000
+!s107 E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/TestQ4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/TestQ4.v|
+!i113 0
+R4
+R0
+n@test@q4

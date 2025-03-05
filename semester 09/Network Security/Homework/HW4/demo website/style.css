@@ -1,0 +1,74 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+h1{
+  color:darkcyan;
+}
+form, #results {
+  width: 400px;
+  padding: 10px;
+}
+form {
+  border: 1px solid #efefef;
+  background: #f2f2f2;
+}
+code {
+  font-family: Consolas, monospace;
+  padding: 1px;
+  background: #55daff;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+input[type=text] {
+  border: 1px solid #b9b9b9;
+}
+input[type=submit] {
+  margin-top: 20px;
+  border: 0;
+  color: #fff;
+  background: #2f2f2f;
+  cursor: pointer;
+}
+#results { margin-top: 20px; }
+#results .sql {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+#results .row {
+  padding: 10px;
+  background: #eee;
+  border-bottom-width:2px;
+  border-bottom-color:  darkslategray;
+  border-bottom-style: groove;
+  display: table;
+  table-layout: fixed;
+  /* border-spacing: 10px; */
+  width:100%;
+}
+#results .row:nth-child(odd) {
+  background: #f7f7f7;
+}
+div.data{
+  background-color: inherit;
+  display: table-cell;
+
+}
+div.price::before{
+  content:"$";
+  font-weight: bold;
+}
+div.price{
+  
+  width:20%;
+}
+div.show{
+  
+  width:20%;
+}

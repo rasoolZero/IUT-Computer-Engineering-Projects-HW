@@ -1,0 +1,1 @@
+objdump -Mintel --disassemble *.o

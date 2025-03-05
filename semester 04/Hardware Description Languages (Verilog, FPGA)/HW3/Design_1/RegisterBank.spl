@@ -1,0 +1,18 @@
+[Inputs]
+clk
+reset
+load
+shift_right
+shift_left
+flush
+output_enable
+serial_in
+=reg_select[5:0]=
+=data_in[31:0]=
+[Outputs]
+serial_out
+=data_out[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel RegisterBank
+

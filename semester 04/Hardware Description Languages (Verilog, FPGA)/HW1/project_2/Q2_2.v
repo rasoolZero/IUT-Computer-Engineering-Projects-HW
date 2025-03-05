@@ -1,0 +1,10 @@
+module Decoder2to4(input [1:0]I,input E,output [3:0]O);
+
+wire O0,O1;
+Decoder1to2 d0(I[1],E,O0,O1);
+
+Decoder1to2 d1(I[0],O0,O[0],O[1]);
+Decoder1to2 d2(I[0],O1,O[2],O[3]);
+
+
+endmodule

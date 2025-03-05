@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/rasool/IUT/t4/FPGA/HWs/HW1/project_2
+T_opt
+!s110 1617711649
+VG42eeK2]2lmLfbRS8ML^=3
+04 14 4 work Mux32to1_16bit fast 0
+=1-a81e84098b15-606c5221-338-574
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+Z2 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1617790984
+VY?JJeRbb>_ojnnTCicXiN0
+04 8 4 work TestQ3_1 fast 0
+=1-a81e84098b15-606d8808-15f-1630
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+R1
+n@_opt1
+R2
+T_opt2
+!s110 1617711720
+V:_UIoUT=bg5o[FmDaS@@@3
+04 8 4 work TestQ3_3 fast 0
+=1-a81e84098b15-606c5268-23b-1514
+R3
+R1
+n@_opt2
+R2
+R0
+vMux32to1_16bit
+!s110 1617711712
+!i10b 1
+!s100 BNS;^GTjBQEU:V3:R0bMJ0
+Ic<4V=mBRR<h;oEXN586>?3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 dE:/rasool/IUT/t4/FPGA/HWs/HW1/project_3
+w1617711703
+8E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_3.v
+FE:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_3.v
+L0 1
+Z6 OL;L;10.6d;65
+r1
+!s85 0
+31
+!s108 1617711712.000000
+!s107 E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_3.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@mux32to1_16bit
+vMux4to1_16bit
+!s110 1617709147
+!i10b 1
+!s100 [nNFaFI86S86KUG;MTTQF2
+IkcY__4F[C;=9h]G1=OoEf1
+R4
+R5
+w1617709143
+8E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_2.v
+FE:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_2.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1617709147.000000
+!s107 E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_2.v|
+!i113 0
+R7
+R1
+n@mux4to1_16bit
+vMux4to1_1bit
+!s110 1617790973
+!i10b 1
+!s100 9H1ZWgSQ8f>Dn0a9J[93z3
+IYfaAFNLSI[G?iPS52RFVI2
+R4
+R5
+w1617790968
+8E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_1.v
+FE:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_1.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1617790973.000000
+!s107 E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_1.v|
+!i113 0
+R7
+R1
+n@mux4to1_1bit
+vTestQ3_1
+!s110 1617790105
+!i10b 1
+!s100 =ma]R>b<EN5UPVCU_`D9E2
+IEZc6aaogdJF>>WnRcLO]C2
+R4
+R5
+w1617711299
+8E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_1.v
+FE:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_1.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1617790105.000000
+!s107 E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_1.v|
+!i113 0
+R7
+R1
+n@test@q3_1
+vTestQ3_2
+!s110 1617711281
+!i10b 1
+!s100 _hKQYN^Hi0PZ8lBGU6JR70
+IS5=A_ZQgH3LD1>lD_Oz2D3
+R4
+R5
+w1617711273
+8E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_2.v
+FE:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_2.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1617711281.000000
+!s107 E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_2.v|
+!i113 0
+R7
+R1
+n@test@q3_2
+vTestQ3_3
+!s110 1617711373
+!i10b 1
+!s100 gJ<BgNo1iV0=ZjhFzf8f;1
+ITX7_c`WIXaWa6TSi1k0gG3
+R4
+R5
+w1617711367
+8E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_3.v
+FE:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_3.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1617711373.000000
+!s107 E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_3.v|
+!i113 0
+R7
+R1
+n@test@q3_3

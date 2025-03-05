@@ -1,0 +1,10 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"code.c" LINE:135
+showAlarmSetting DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"code.c" LINE:86
+sprintf DSTACK_USAGE:14 DSTACK_LEVEL:14 FILE:"C:\cvavr\lib\stdio.lib" LINE:1462
+_print DSTACK_USAGE:20 DSTACK_LEVEL:34 FILE:"C:\cvavr\lib\stdio.lib" LINE:533
+strlen DSTACK_USAGE:2 DSTACK_LEVEL:36 FILE:"C:\cvavr\lib\string.lib" LINE:1706
+timer1_ovf_isr DSTACK_USAGE:12 DSTACK_LEVEL:48 FILE:"code.c" LINE:98
+displayTime DSTACK_USAGE:0 DSTACK_LEVEL:48 FILE:"code.c" LINE:71
+sprintf DSTACK_USAGE:14 DSTACK_LEVEL:62 FILE:"C:\cvavr\lib\stdio.lib" LINE:1462
+_print DSTACK_USAGE:20 DSTACK_LEVEL:82 FILE:"C:\cvavr\lib\stdio.lib" LINE:533
+strlen DSTACK_USAGE:2 DSTACK_LEVEL:84 FILE:"C:\cvavr\lib\string.lib" LINE:1706

@@ -1,0 +1,1 @@
+.\ubcsat\ubcsat -alg saps -solve -runs 100 -r out null -r stats null -r model null -r solution "output.txt" < "DIMACS Input.txt"

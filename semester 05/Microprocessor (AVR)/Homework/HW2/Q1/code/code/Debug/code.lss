@@ -1,0 +1,255 @@
+
+code.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000120  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  00000174  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  00000174  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000001a4  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000028  00000000  00000000  000001e0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000005bf  00000000  00000000  00000208  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000548  00000000  00000000  000007c7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002ee  00000000  00000000  00000d0f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000034  00000000  00000000  00001000  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000002d2  00000000  00000000  00001034  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000ef  00000000  00000000  00001306  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000018  00000000  00000000  000013f5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 6e 00 	call	0xdc	; 0xdc <main>
+  64:	0c 94 8e 00 	jmp	0x11c	; 0x11c <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <setLights>:
+#include <avr/io.h>
+
+void setLights(char counter){
+	if(counter==1){
+  6c:	81 30       	cpi	r24, 0x01	; 1
+  6e:	29 f4       	brne	.+10     	; 0x7a <setLights+0xe>
+		PORTC=0b00100001;
+  70:	81 e2       	ldi	r24, 0x21	; 33
+  72:	85 bb       	out	0x15, r24	; 21
+		PORTD=0b00001001;
+  74:	89 e0       	ldi	r24, 0x09	; 9
+  76:	82 bb       	out	0x12, r24	; 18
+		return;
+  78:	08 95       	ret
+	}
+	if(counter==2){
+  7a:	82 30       	cpi	r24, 0x02	; 2
+  7c:	29 f4       	brne	.+10     	; 0x88 <setLights+0x1c>
+		PORTC=0b00100010;
+  7e:	82 e2       	ldi	r24, 0x22	; 34
+  80:	85 bb       	out	0x15, r24	; 21
+		PORTD=0b00001001;
+  82:	89 e0       	ldi	r24, 0x09	; 9
+  84:	82 bb       	out	0x12, r24	; 18
+		return;
+  86:	08 95       	ret
+	}
+	if(counter==3){
+  88:	83 30       	cpi	r24, 0x03	; 3
+  8a:	29 f4       	brne	.+10     	; 0x96 <setLights+0x2a>
+		PORTC=0b00001100;
+  8c:	8c e0       	ldi	r24, 0x0C	; 12
+  8e:	85 bb       	out	0x15, r24	; 21
+		PORTD=0b00001001;
+  90:	89 e0       	ldi	r24, 0x09	; 9
+  92:	82 bb       	out	0x12, r24	; 18
+		return;
+  94:	08 95       	ret
+	}
+	if(counter==4){
+  96:	84 30       	cpi	r24, 0x04	; 4
+  98:	29 f4       	brne	.+10     	; 0xa4 <setLights+0x38>
+		PORTC=0b00010100;
+  9a:	84 e1       	ldi	r24, 0x14	; 20
+  9c:	85 bb       	out	0x15, r24	; 21
+		PORTD=0b00001001;
+  9e:	89 e0       	ldi	r24, 0x09	; 9
+  a0:	82 bb       	out	0x12, r24	; 18
+		return;
+  a2:	08 95       	ret
+	}
+	if(counter==5){
+  a4:	85 30       	cpi	r24, 0x05	; 5
+  a6:	29 f4       	brne	.+10     	; 0xb2 <setLights+0x46>
+		PORTC=0b01100100;
+  a8:	84 e6       	ldi	r24, 0x64	; 100
+  aa:	85 bb       	out	0x15, r24	; 21
+		PORTD=0b00001000;
+  ac:	88 e0       	ldi	r24, 0x08	; 8
+  ae:	82 bb       	out	0x12, r24	; 18
+		return;
+  b0:	08 95       	ret
+	}
+	if(counter==6){
+  b2:	86 30       	cpi	r24, 0x06	; 6
+  b4:	29 f4       	brne	.+10     	; 0xc0 <setLights+0x54>
+		PORTC=0b10100100;
+  b6:	84 ea       	ldi	r24, 0xA4	; 164
+  b8:	85 bb       	out	0x15, r24	; 21
+		PORTD=0b00001000;
+  ba:	88 e0       	ldi	r24, 0x08	; 8
+  bc:	82 bb       	out	0x12, r24	; 18
+		return;
+  be:	08 95       	ret
+	}
+	if(counter==7){
+  c0:	87 30       	cpi	r24, 0x07	; 7
+  c2:	29 f4       	brne	.+10     	; 0xce <setLights+0x62>
+		PORTC=0b00100100;
+  c4:	84 e2       	ldi	r24, 0x24	; 36
+  c6:	85 bb       	out	0x15, r24	; 21
+		PORTD=0b00000011;
+  c8:	83 e0       	ldi	r24, 0x03	; 3
+  ca:	82 bb       	out	0x12, r24	; 18
+		return;
+  cc:	08 95       	ret
+	}
+	if(counter==8){
+  ce:	88 30       	cpi	r24, 0x08	; 8
+  d0:	21 f4       	brne	.+8      	; 0xda <setLights+0x6e>
+		PORTC=0b00100100;
+  d2:	84 e2       	ldi	r24, 0x24	; 36
+  d4:	85 bb       	out	0x15, r24	; 21
+		PORTD=0b00000101;
+  d6:	85 e0       	ldi	r24, 0x05	; 5
+  d8:	82 bb       	out	0x12, r24	; 18
+  da:	08 95       	ret
+
+000000dc <main>:
+		return;
+	}
+}
+int main(void)
+{
+	DDRC=0xFF;
+  dc:	8f ef       	ldi	r24, 0xFF	; 255
+  de:	84 bb       	out	0x14, r24	; 20
+	DDRD=0x0F;
+  e0:	8f e0       	ldi	r24, 0x0F	; 15
+  e2:	81 bb       	out	0x11, r24	; 17
+	DDRB &= ~(1<<0);
+  e4:	b8 98       	cbi	0x17, 0	; 23
+	char counter=1;
+  e6:	c1 e0       	ldi	r28, 0x01	; 1
+    /* Replace with your application code */
+    while (1) 
+    {
+		setLights(counter);
+		TCCR0 = 0x07;
+  e8:	17 e0       	ldi	r17, 0x07	; 7
+		if(counter%2==1){
+			TCNT0 = (char) -200;
+		}
+		else{
+			TCNT0 = -40;
+  ea:	0f 2e       	mov	r0, r31
+  ec:	f8 ed       	ldi	r31, 0xD8	; 216
+  ee:	ff 2e       	mov	r15, r31
+  f0:	f0 2d       	mov	r31, r0
+    while (1) 
+    {
+		setLights(counter);
+		TCCR0 = 0x07;
+		if(counter%2==1){
+			TCNT0 = (char) -200;
+  f2:	08 e3       	ldi	r16, 0x38	; 56
+		else{
+			TCNT0 = -40;
+		}
+		while((TIFR&0x01) == 0);
+		TCCR0 = 0;
+		TIFR = 1<<TOV0;
+  f4:	d1 e0       	ldi	r29, 0x01	; 1
+	DDRB &= ~(1<<0);
+	char counter=1;
+    /* Replace with your application code */
+    while (1) 
+    {
+		setLights(counter);
+  f6:	8c 2f       	mov	r24, r28
+  f8:	0e 94 36 00 	call	0x6c	; 0x6c <setLights>
+		TCCR0 = 0x07;
+  fc:	13 bf       	out	0x33, r17	; 51
+		if(counter%2==1){
+  fe:	c0 ff       	sbrs	r28, 0
+ 100:	02 c0       	rjmp	.+4      	; 0x106 <main+0x2a>
+			TCNT0 = (char) -200;
+ 102:	02 bf       	out	0x32, r16	; 50
+ 104:	01 c0       	rjmp	.+2      	; 0x108 <main+0x2c>
+		}
+		else{
+			TCNT0 = -40;
+ 106:	f2 be       	out	0x32, r15	; 50
+		}
+		while((TIFR&0x01) == 0);
+ 108:	08 b6       	in	r0, 0x38	; 56
+ 10a:	00 fe       	sbrs	r0, 0
+ 10c:	fd cf       	rjmp	.-6      	; 0x108 <main+0x2c>
+		TCCR0 = 0;
+ 10e:	13 be       	out	0x33, r1	; 51
+		TIFR = 1<<TOV0;
+ 110:	d8 bf       	out	0x38, r29	; 56
+		counter++;
+ 112:	cf 5f       	subi	r28, 0xFF	; 255
+		if(counter==9)
+ 114:	c9 30       	cpi	r28, 0x09	; 9
+ 116:	79 f7       	brne	.-34     	; 0xf6 <main+0x1a>
+			counter=1;
+ 118:	c1 e0       	ldi	r28, 0x01	; 1
+ 11a:	ed cf       	rjmp	.-38     	; 0xf6 <main+0x1a>
+
+0000011c <_exit>:
+ 11c:	f8 94       	cli
+
+0000011e <__stop_program>:
+ 11e:	ff cf       	rjmp	.-2      	; 0x11e <__stop_program>

@@ -1,0 +1,39 @@
+int x, y;
+float z;
+bool flag;
+x = 10;
+y = 5;
+z = 7.5;
+flag = true;
+
+if (x > y && z <= 8.0) {
+    y = x * 2;
+    if (flag || z >= 7.0) {
+        flag = false;
+    } else {
+        z = z + 1.0;
+    }
+} else {
+    x = x - 1;
+    if (!(flag == false)) {
+        y = y / 2;
+    } else {
+        z = z - 1.0;
+    }
+}
+
+while (x != y) {
+    if (x < y || z != 6.5) {
+        x = x + 1;
+    } else {
+        y = y - 1;
+    }
+}
+
+float result;
+result = x + y * z / 2.0;
+
+if (flag && !(z > 5.0)) {
+    result = result + 10.0;
+}
+

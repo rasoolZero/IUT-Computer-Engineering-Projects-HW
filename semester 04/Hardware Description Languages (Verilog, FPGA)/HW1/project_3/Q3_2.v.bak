@@ -1,0 +1,7 @@
+module Mux4to1_16bit( I0, I1, I2, I3,S, O);
+input [15:0] I0,I1,I2,I3;
+input [1:0] S;
+output [15:0] O;
+Mux4to1_1bit MUX0(I0[0],I1[0],I2[0],I3[0],S,O[0]);
+
+endmodule

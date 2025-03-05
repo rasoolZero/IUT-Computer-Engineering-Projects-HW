@@ -1,0 +1,21 @@
+int a, b;
+float x, y;
+bool flag;
+a = 10;
+b = 5;
+x = 3.14;
+y = 2.71;
+if (a > b) {
+    flag = true;
+    while (x <= y) {
+        x = x + 1.0;
+        y = y - 1.0;
+        if (flag && (a < b)) {
+            flag = false;
+        } else {
+            flag = true;
+        }
+    }
+} else {
+    flag = false;
+}

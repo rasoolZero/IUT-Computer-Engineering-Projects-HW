@@ -1,0 +1,19 @@
+module AddSub16bit(input [0:15] A,input [0:15] B,input flag,output carry,output [0:15]result);
+wire cin;
+wire cout1,cout2,cout3;
+assign cin = !flag;
+reg [0:15] B2;
+FA4bit FA1(A[11:15],B2[11:15],cin,cout1,result[11:15]);
+FA4bit FA2(A[7:11],B2[7:11],cout1,cout2,result[7:11]);
+FA4bit FA3(A[3:7],B2[3:7],cout2,cout3,result[3:7]);
+FA4bit FA4(A[0:3],B2[0:3],cout3,carry,result[0:3]);
+always @(flag) begin
+	if (flag == 1'b0)begin
+	B2=~B;
+	end
+	else begin
+	B2=B;
+	end
+end
+
+endmodule

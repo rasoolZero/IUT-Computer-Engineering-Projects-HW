@@ -1,0 +1,65 @@
+E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/TestQ1_2.v {1 {vlog -work work -vopt -stats=none {E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\TestQ1_2.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ1_2
+
+Top level modules:
+	TestQ1_2
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/TestQ2.v {1 {vlog -work work -vopt -stats=none {E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\TestQ2.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ2
+
+Top level modules:
+	TestQ2
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/Q1_2.v {1 {vlog -work work -vopt -stats=none {E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_2.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module reg_32bit
+-- Compiling module RegisterBank
+
+Top level modules:
+	RegisterBank
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/TestQ3.v {1 {vlog -work work -vopt -stats=none {E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\TestQ3.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ3
+
+Top level modules:
+	TestQ3
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/Q4.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/Q4.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Binary_Divisibility_By_7
+
+Top level modules:
+	Binary_Divisibility_By_7
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/TestQ4.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/TestQ4.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ4
+
+Top level modules:
+	TestQ4
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/reg32bitTest.v {1 {vlog -work work -vopt -stats=none {E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\reg32bitTest.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module reg32bitTest
+
+Top level modules:
+	reg32bitTest
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/Q1_1.v {1 {vlog -work work -vopt -stats=none {E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_1.v}
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module myReg
+
+Top level modules:
+	myReg
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/TestQ1_1.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW2/Project/TestQ1_1.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ1_1
+
+Top level modules:
+	TestQ1_1
+
+} {} {}}

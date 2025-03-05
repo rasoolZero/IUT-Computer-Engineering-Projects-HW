@@ -1,0 +1,43 @@
+E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_3.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_3.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ3_3
+
+Top level modules:
+	TestQ3_3
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_3.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_3.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Mux32to1_16bit
+
+Top level modules:
+	Mux32to1_16bit
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_1.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_1.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Mux4to1_1bit
+
+Top level modules:
+	Mux4to1_1bit
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_1.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_1.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ3_1
+
+Top level modules:
+	TestQ3_1
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_2.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/Q3_2.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Mux4to1_16bit
+
+Top level modules:
+	Mux4to1_16bit
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_2.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_3/TestQ3_2.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ3_2
+
+Top level modules:
+	TestQ3_2
+
+} {} {}}

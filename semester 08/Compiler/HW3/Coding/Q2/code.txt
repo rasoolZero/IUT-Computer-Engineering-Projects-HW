@@ -1,0 +1,8 @@
+int a;
+bool flag, x, y;
+x = true;
+y = true;
+flag = !(x && y) || y;
+a = 2;
+b = a > 2;
+c = -2 * 3 == 2 * 3;

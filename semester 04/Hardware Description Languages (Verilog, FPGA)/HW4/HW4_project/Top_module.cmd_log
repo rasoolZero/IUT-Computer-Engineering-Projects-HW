@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/Top_module.xst" -ofn "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/Top_module.syr" 
+xst -intstyle ise -ifn "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/Top_module.xst" -ofn "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/Top_module.syr" 
+xst -intstyle ise -ifn "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/Top_module.xst" -ofn "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/Top_module.syr" 

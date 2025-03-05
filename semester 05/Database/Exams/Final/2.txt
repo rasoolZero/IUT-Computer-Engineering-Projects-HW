@@ -1,0 +1,47 @@
+-- Kamkar
+
+-- A
+create view stotals as(
+select extract(year from orderdate::timestamp::date) as year,
+extract(quarter from orderdate::timestamp::date) as quarter,
+extract(month from orderdate::timestamp::date) as month,
+extract(day from orderdate::timestamp::date)as day,
+sum(orderqty) as totqty,sum(unitprice*orderqty) as totprice
+from sales.salesorderdetail inner join sales.salesorderheader using(salesorderid)
+group by orderdate::timestamp::date
+order by orderdate::timestamp::date);
+
+
+--B
+select year,quarter,month,day,sum(totqty) as totqty,sum(totprice)as totprice from stotals
+group by rollup(year,quarter,month,day)
+order by year,month,day;
+
+
+--C
+select year, quarter,
+sum(totprice) / sum(totqty) as price_on_qty,
+rank() over(partition by year order by sum(totprice) / sum(totqty) desc ) as s_rank
+from stotals
+group by year,quarter
+order by year,quarter,s_rank;
+
+
+
+
+--D
+with date_tot as (select (CAST(year AS VARCHAR(4))||'-'||RIGHT('00'||CAST(month AS VARCHAR(4)),2)) as year_month ,avg (totprice) as average from stotals 
+group by year,month order by year_month)
+select year_month,average,
+lag(average,2) over (order by(year_month)) as last_second_month_average,
+lead(average) over(order by (year_month)) as next_month_average
+from date_tot;
+
+
+
+
+
+
+
+
+

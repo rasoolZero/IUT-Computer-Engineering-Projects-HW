@@ -1,0 +1,36 @@
+x = 10 / 2
+y = x *  4
+print(y-  6)
+print(    x + (-2  * 3))
+a32 = 2 * 5 + 2 ^ 3
+print(a32)
+print((x-3)^2^3)
+z=  0
+print(x/z*2)
+print(-2^3)
+
+x = sin(2.5)
+y = cos(2*x+10.2)
+print(x)
+print(y)
+print(tan(x))
+print(cot(y))
+print(log(x)  *  exp(x))
+print(exp(x))
+
+x = 2
+y = x*2
+z$ = -3.2
+print(x+y)
+print(x-5*3)
+print(y-2^3)
+
+
+a = (10/2)
+b = a*-4
+print(a-b)
+print(c^a)
+c_correct = 2.5 * 4
+print(c_correct^a)
+4wrong_var = 32/8
+print(-2^4)

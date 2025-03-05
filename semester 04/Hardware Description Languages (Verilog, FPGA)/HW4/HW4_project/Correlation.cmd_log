@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/Correlation.xst" -ofn "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/Correlation.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Correlation.ngc Correlation.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Correlation_map.ncd Correlation.ngd Correlation.pcf 

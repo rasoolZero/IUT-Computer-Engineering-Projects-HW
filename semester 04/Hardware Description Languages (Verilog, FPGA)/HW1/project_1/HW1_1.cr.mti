@@ -1,0 +1,71 @@
+E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_3.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_3.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module BitCounter
+
+Top level modules:
+	BitCounter
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_3.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_3.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ1_3
+
+Top level modules:
+	TestQ1_3
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_4.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_4.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ1_4
+
+Top level modules:
+	TestQ1_4
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_4.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_4.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module FA4bit
+
+Top level modules:
+	FA4bit
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_5.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_5.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module AddSub16bit
+
+Top level modules:
+	AddSub16bit
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_5.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_5.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ1_5
+
+Top level modules:
+	TestQ1_5
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_1.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_1.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ1_1
+
+Top level modules:
+	TestQ1_1
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_1.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_1.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module HA
+
+Top level modules:
+	HA
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_2.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/TestQ1_2.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ1_2
+
+Top level modules:
+	TestQ1_2
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_2.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_1/Q1_2.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}}

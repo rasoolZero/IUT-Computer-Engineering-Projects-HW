@@ -1,0 +1,15 @@
+E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/Q4.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/Q4.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Switch
+
+Top level modules:
+	Switch
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/TestQ4.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_4/TestQ4.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ4
+
+Top level modules:
+	TestQ4
+
+} {} {}}

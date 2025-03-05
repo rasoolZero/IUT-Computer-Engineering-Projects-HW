@@ -1,0 +1,23 @@
+  //hello world
+
+ 12465 213246
+5465
+4234.5234
+pet
+bet
+get
+met
+vet
+4
+hello
+hello4token
+id
+123.12 34 "hello" "alireza how are you"
+r2ds
+"1234"
+"//comment"
+// this is "a" comment
+"pet bet"
+"hello
+world"
+"hello \" world"

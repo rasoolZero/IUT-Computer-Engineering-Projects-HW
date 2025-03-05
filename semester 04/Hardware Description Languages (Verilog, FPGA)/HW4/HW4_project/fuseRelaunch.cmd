@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/TestQ1_isim_beh.exe" -prj "E:/rasool/IUT/t4/FPGA/HWs/HW4/HW4_project/TestQ1_beh.prj" "work.TestQ1" "work.glbl" 

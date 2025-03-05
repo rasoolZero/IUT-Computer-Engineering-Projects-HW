@@ -1,0 +1,1 @@
+hello, this is my first socket program writen in python, it's a very basic FTP program working over TCP

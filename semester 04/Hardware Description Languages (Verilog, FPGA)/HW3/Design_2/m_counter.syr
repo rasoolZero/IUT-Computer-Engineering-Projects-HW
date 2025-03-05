@@ -1,0 +1,477 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: m_counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "m_counter.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "m_counter"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : m_counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q2.v" into library work
+Parsing module <m_counter>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <m_counter>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <m_counter>.
+    Related source file is "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q2.v".
+    Found 1-bit register for signal <t1>.
+    Found 1-bit register for signal <t2>.
+    Found 1-bit register for signal <t3>.
+    Found 8-bit register for signal <c_2000>.
+    Found 7-bit register for signal <c_5000>.
+    Found 9-bit register for signal <c_1000>.
+    Found 20-bit adder for signal <n0062[19:0]> created at line 13.
+    Found 21-bit adder for signal <n0046> created at line 13.
+    Found 9-bit adder for signal <c_1000[8]_GND_1_o_add_9_OUT> created at line 30.
+    Found 8-bit adder for signal <c_2000[7]_GND_1_o_add_13_OUT> created at line 32.
+    Found 7-bit adder for signal <c_5000[6]_GND_1_o_add_17_OUT> created at line 34.
+    Found 9x10-bit multiplier for signal <c_1000[8]_PWR_1_o_MuLt_0_OUT> created at line 13.
+    Found 8x11-bit multiplier for signal <c_2000[7]_PWR_1_o_MuLt_1_OUT> created at line 13.
+    Found 7x13-bit multiplier for signal <c_5000[6]_PWR_1_o_MuLt_3_OUT> created at line 13.
+    Found 21-bit comparator lessequal for signal <n0005> created at line 13
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <m_counter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 10x9-bit multiplier                                   : 1
+ 11x8-bit multiplier                                   : 1
+ 13x7-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 5
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 6
+ 1-bit register                                        : 3
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 1
+ 21-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <m_counter>.
+The following registers are absorbed into accumulator <c_2000>: 1 register on signal <c_2000>.
+The following registers are absorbed into accumulator <c_5000>: 1 register on signal <c_5000>.
+The following registers are absorbed into accumulator <c_1000>: 1 register on signal <c_1000>.
+	Multiplier <Mmult_c_5000[6]_PWR_1_o_MuLt_3_OUT> in block <m_counter> and adder/subtractor <Madd_n0046> in block <m_counter> are combined into a MAC<Maddsub_c_5000[6]_PWR_1_o_MuLt_3_OUT>.
+	Multiplier <Mmult_c_1000[8]_PWR_1_o_MuLt_0_OUT> in block <m_counter> and adder/subtractor <Madd_n0062[19:0]> in block <m_counter> are combined into a MAC<Maddsub_c_1000[8]_PWR_1_o_MuLt_0_OUT>.
+Unit <m_counter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 2
+ 10x9-to-20-bit MAC                                    : 1
+ 13x7-to-21-bit MAC                                    : 1
+# Multipliers                                          : 1
+ 11x8-bit multiplier                                   : 1
+# Accumulators                                         : 3
+ 7-bit up accumulator                                  : 1
+ 8-bit up accumulator                                  : 1
+ 9-bit up accumulator                                  : 1
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Comparators                                          : 1
+ 21-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <m_counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block m_counter, actual ratio is 1.
+FlipFlop c_2000_1 has been replicated 1 time(s)
+FlipFlop c_2000_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : m_counter.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 140
+#      GND                         : 1
+#      INV                         : 4
+#      LUT2                        : 13
+#      LUT3                        : 15
+#      LUT4                        : 28
+#      LUT5                        : 16
+#      LUT6                        : 6
+#      MUXCY                       : 32
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 29
+#      FDC                         : 3
+#      FDCE                        : 26
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 48
+#      IBUF                        : 23
+#      OBUF                        : 25
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              29  out of  18224     0%  
+ Number of Slice LUTs:                   82  out of   9112     0%  
+    Number used as Logic:                82  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     84
+   Number with an unused Flip Flop:      55  out of     84    65%  
+   Number with an unused LUT:             2  out of     84     2%  
+   Number of fully used LUT-FF pairs:    27  out of     84    32%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          49
+ Number of bonded IOBs:                  49  out of    232    21%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 29    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.772ns (Maximum Frequency: 360.789MHz)
+   Minimum input arrival time before clock: 3.685ns
+   Maximum output required time after clock: 16.239ns
+   Maximum combinational path delay: 6.970ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 2.772ns (frequency: 360.789MHz)
+  Total number of paths / destination ports: 140 / 52
+-------------------------------------------------------------------------
+Delay:               2.772ns (Levels of Logic = 2)
+  Source:            c_2000_4 (FF)
+  Destination:       c_2000_5 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: c_2000_4 to c_2000_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.447   1.161  c_2000_4 (c_2000_4)
+     LUT6:I3->O            3   0.205   0.651  Maccum_c_2000_cy<4>11 (Maccum_c_2000_cy<4>)
+     LUT3:I2->O            1   0.205   0.000  c_2000_5_dpot (c_2000_5_dpot)
+     FDCE:D                    0.102          c_2000_5
+    ----------------------------------------
+    Total                      2.772ns (0.959ns logic, 1.813ns route)
+                                       (34.6% logic, 65.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 73 / 65
+-------------------------------------------------------------------------
+Offset:              3.685ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       t3 (FF)
+  Destination Clock: Clock rising
+
+  Data Path: Reset to t3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  Reset_IBUF (Reset_IBUF)
+     INV:I->O             29   0.206   1.249  Reset_inv1_INV_0 (Reset_inv)
+     FDC:CLR                   0.430          t3
+    ----------------------------------------
+    Total                      3.685ns (1.858ns logic, 1.827ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 2656197 / 25
+-------------------------------------------------------------------------
+Offset:              16.239ns (Levels of Logic = 28)
+  Source:            c_2000_2 (FF)
+  Destination:       Out (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: c_2000_2 to Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            21   0.447   1.342  c_2000_2 (c_2000_2)
+     LUT3:I0->O            1   0.205   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_lut<4> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<4> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<5> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<6> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<7> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<8> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_cy<8>)
+     XORCY:CI->O           1   0.180   0.924  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd3_xor<9> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd_133)
+     LUT5:I0->O            1   0.203   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_lut<11> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_lut<11>)
+     MUXCY:S->O            1   0.172   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<11> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<12> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<13> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<14> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<14>)
+     MUXCY:CI->O           0   0.019   0.000  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<15> (Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_cy<15>)
+     XORCY:CI->O           1   0.180   0.579  Mmult_c_2000[7]_PWR_1_o_MuLt_1_OUT_Madd4_xor<16> (c_2000[7]_PWR_1_o_MuLt_1_OUT<18>)
+     DSP48A1:C18->P19      1   2.687   0.579  Maddsub_c_1000[8]_PWR_1_o_MuLt_0_OUT (n0062[19:0]<19>)
+     DSP48A1:C19->P0       2   2.687   0.845  Maddsub_c_5000[6]_PWR_1_o_MuLt_3_OUT (n0046<0>)
+     LUT4:I1->O            1   0.205   0.000  Mcompar_Out_lut<0> (Mcompar_Out_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_Out_cy<0> (Mcompar_Out_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<1> (Mcompar_Out_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<2> (Mcompar_Out_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<3> (Mcompar_Out_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<4> (Mcompar_Out_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<5> (Mcompar_Out_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<6> (Mcompar_Out_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<7> (Mcompar_Out_cy<7>)
+     MUXCY:CI->O           1   0.213   0.808  Mcompar_Out_cy<8> (Mcompar_Out_cy<8>)
+     LUT5:I2->O            1   0.205   0.579  Mcompar_Out_cy<9> (Out_OBUF)
+     OBUF:I->O                 2.571          Out_OBUF (Out)
+    ----------------------------------------
+    Total                     16.239ns (10.584ns logic, 5.655ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 37 / 1
+-------------------------------------------------------------------------
+Delay:               6.970ns (Levels of Logic = 13)
+  Source:            Count_m<0> (PAD)
+  Destination:       Out (PAD)
+
+  Data Path: Count_m<0> to Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.864  Count_m_0_IBUF (Count_m_0_IBUF)
+     LUT4:I0->O            1   0.203   0.000  Mcompar_Out_lut<0> (Mcompar_Out_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_Out_cy<0> (Mcompar_Out_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<1> (Mcompar_Out_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<2> (Mcompar_Out_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<3> (Mcompar_Out_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<4> (Mcompar_Out_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<5> (Mcompar_Out_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<6> (Mcompar_Out_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_Out_cy<7> (Mcompar_Out_cy<7>)
+     MUXCY:CI->O           1   0.213   0.808  Mcompar_Out_cy<8> (Mcompar_Out_cy<8>)
+     LUT5:I2->O            1   0.205   0.579  Mcompar_Out_cy<9> (Out_OBUF)
+     OBUF:I->O                 2.571          Out_OBUF (Out)
+    ----------------------------------------
+    Total                      6.970ns (4.719ns logic, 2.251ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock          |    2.772|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.88 secs
+ 
+--> 
+
+Total memory usage is 4486972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

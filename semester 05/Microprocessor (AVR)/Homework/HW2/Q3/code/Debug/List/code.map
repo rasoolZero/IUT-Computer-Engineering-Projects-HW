@@ -1,0 +1,53 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+inputCounter                                                                      0x0260       1
+alarmSetting                                                                      0x0261       1
+alarming                                                                          0x0262       1
+buff                                                                              0x0263      17
+buff                                                                              0x0274      17
+_base_y                                                                           0x0285       4
+_lcd_x                                                                            0x0289       1
+_lcd_y                                                                            0x028A       1
+_lcd_maxx                                                                         0x028B       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+second                                                                            R5           1
+minute                                                                            R4           1
+hour                                                                              R7           1
+alarmSecond                                                                       R6           1
+alarmMinute                                                                       R9           1
+alarmHour                                                                         R8           1
+day                                                                               R11          1
+month                                                                             R10          1
+year                                                                              R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+updateTime                                                                        0x0007B     43
+displayTime                                                                       0x000A6     42
+updateAlarm                                                                       0x000D0     11
+showAlarmSetting                                                                  0x000DB     28
+checkAlarm                                                                        0x000F7     11
+timer1_ovf_isr                                                                    0x00102     35
+GetKeyPressed                                                                     0x00125     41
+main                                                                              0x0014E    160
+_lcd_write_nibble_G100                                                            0x001EE     20
+_lcd_write_data                                                                   0x00202     12
+lcd_gotoxy                                                                        0x0020E     17
+lcd_clear                                                                         0x0021F     14
+lcd_putchar                                                                       0x0022D     32
+lcd_puts                                                                          0x0024D     17
+lcd_init                                                                          0x0025E     47
+put_buff_G101                                                                     0x0028D     64
+_print_G101                                                                       0x002CD    308
+sprintf                                                                           0x00401     52
+strlen                                                                            0x00435     12
+strlenf                                                                           0x00441     13

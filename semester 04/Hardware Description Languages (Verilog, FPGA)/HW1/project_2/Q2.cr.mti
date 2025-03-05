@@ -1,0 +1,43 @@
+E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/Q2_1.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/Q2_1.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Decoder1to2
+
+Top level modules:
+	Decoder1to2
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/TestQ2_1.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/TestQ2_1.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ2_1
+
+Top level modules:
+	TestQ2_1
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/Q2_2.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/Q2_2.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Decoder2to4
+
+Top level modules:
+	Decoder2to4
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/TestQ2_2.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/TestQ2_2.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ2_2
+
+Top level modules:
+	TestQ2_2
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/Q2_3.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/Q2_3.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Decoder3to8
+
+Top level modules:
+	Decoder3to8
+
+} {} {}} E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/TestQ2_3.v {1 {vlog -work work -vopt -stats=none E:/rasool/IUT/t4/FPGA/HWs/HW1/project_2/TestQ2_3.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module TestQ2_3
+
+Top level modules:
+	TestQ2_3
+
+} {} {}}

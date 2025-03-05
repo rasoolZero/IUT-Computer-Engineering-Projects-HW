@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QMainWindow" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>671</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="plainText">
+     <string>** Don't forget to use ORG 100, PC always start at address 0x100
+
+Memory Reference
+AND : And memory word to the accumulator
+ADD : Add memory word to the accumulator
+LDA : Load memory word into the accumulator
+STA : Store accumulator in memory
+BUN : Branch unconditionally to memory address
+BSA : Branch to and save return address at memory address
+ISA : Increment memory word and skip the next instruction if it is zero
+
+Register Reference
+CLA : Clear the accumulator
+CLE : Clear the carry bit
+CMA : Complement the accumulator
+CME : Complement the carry bit
+CIR : Circularly shift the accumulator and carry bit to the right
+CIL : Circularly shift the accumulator and carry bit to the left
+INC : Increment the accumulator
+SPA : Skip the next instruction if the accumulator is not negative
+SNA : Skip the next instruction if the accumulator is negative
+SZA : Skip the next instruction if the accumulator is zero
+SZE : Skip the next instruction if the carry bit is zero
+
+Input and Output
+INP : Load the accumulator from input
+OUT : Output the accumulator
+SKI : Skip the next instruction if the input flag is enabled
+SKO : Skip the next instruction if the output flag is enabled
+ION : Enable interrupts
+IOF : Disable interrupts</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

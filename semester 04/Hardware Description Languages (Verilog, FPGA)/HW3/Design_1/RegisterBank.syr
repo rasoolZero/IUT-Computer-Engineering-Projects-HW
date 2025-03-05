@@ -1,0 +1,596 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: RegisterBank.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RegisterBank.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RegisterBank"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : RegisterBank
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_1.v" into library work
+Parsing module <myReg>.
+Analyzing Verilog file "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_2.v" into library work
+Parsing module <reg_32bit>.
+Parsing module <RegisterBank>.
+WARNING:HDLCompiler:248 - "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_2.v" Line 65: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_2.v" Line 68: Block identifier is required on this block
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <RegisterBank>.
+
+Elaborating module <reg_32bit>.
+
+Elaborating module <myReg>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <RegisterBank>.
+    Related source file is "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_2.v".
+    Found 1-bit 64-to-1 multiplexer for signal <serial_out_reg> created at line 46.
+    Found 32-bit 64-to-1 multiplexer for signal <data_out_reg> created at line 48.
+    Found 1-bit tristate buffer for signal <data_out<0>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<1>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<2>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<3>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<4>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<5>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<6>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<7>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<8>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<9>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<10>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<11>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<12>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<13>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<14>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<15>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<16>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<17>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<18>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<19>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<20>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<21>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<22>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<23>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<24>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<25>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<26>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<27>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<28>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<29>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<30>> created at line 69
+    Found 1-bit tristate buffer for signal <data_out<31>> created at line 69
+    Found 1-bit tristate buffer for signal <serial_out> created at line 72
+    Summary:
+	inferred   8 Multiplexer(s).
+	inferred  33 Tristate(s).
+Unit <RegisterBank> synthesized.
+
+Synthesizing Unit <reg_32bit>.
+    Related source file is "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_2.v".
+INFO:Xst:3210 - "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_2.v" line 14: Output port <serial_out> of the instance <r2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_2.v" line 15: Output port <serial_out> of the instance <r3> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <reg_32bit> synthesized.
+
+Synthesizing Unit <myReg>.
+    Related source file is "E:\rasool\IUT\t4\FPGA\HWs\HW2\Project\Q1_1.v".
+    Found 8-bit register for signal <qdata>.
+    Found 1-bit register for signal <serial_out>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <myReg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 512
+ 1-bit register                                        : 256
+ 8-bit register                                        : 256
+# Multiplexers                                         : 1352
+ 1-bit 2-to-1 multiplexer                              : 832
+ 1-bit 64-to-1 multiplexer                             : 1
+ 32-bit 64-to-1 multiplexer                            : 1
+ 64-bit 2-to-1 multiplexer                             : 6
+ 8-bit 2-to-1 multiplexer                              : 512
+# Tristates                                            : 33
+ 1-bit tristate buffer                                 : 33
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2304
+ Flip-Flops                                            : 2304
+# Multiplexers                                         : 1352
+ 1-bit 2-to-1 multiplexer                              : 832
+ 1-bit 64-to-1 multiplexer                             : 1
+ 32-bit 64-to-1 multiplexer                            : 1
+ 64-bit 2-to-1 multiplexer                             : 6
+ 8-bit 2-to-1 multiplexer                              : 512
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RegisterBank> ...
+
+Optimizing unit <myReg> ...
+WARNING:Xst:2677 - Node <[0].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[0].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[1].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[1].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[2].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[2].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[3].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[3].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[4].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[4].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[5].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[5].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[6].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[6].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[7].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[7].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[8].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[8].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[9].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[9].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[10].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[10].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[11].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[11].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[12].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[12].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[13].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[13].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[14].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[14].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[15].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[15].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[16].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[16].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[17].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[17].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[18].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[18].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[19].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[19].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[20].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[20].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[21].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[21].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[22].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[22].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[23].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[23].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[24].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[24].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[25].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[25].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[26].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[26].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[27].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[27].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[28].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[28].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[29].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[29].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[30].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[30].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[31].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[31].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[32].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[32].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[33].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[33].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[34].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[34].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[35].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[35].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[36].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[36].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[37].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[37].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[38].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[38].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[39].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[39].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[40].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[40].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[41].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[41].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[42].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[42].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[43].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[43].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[44].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[44].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[45].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[45].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[46].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[46].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[47].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[47].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[48].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[48].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[49].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[49].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[50].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[50].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[51].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[51].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[52].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[52].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[53].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[53].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[54].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[54].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[55].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[55].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[56].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[56].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[57].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[57].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[58].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[58].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[59].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[59].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[60].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[60].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[61].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[61].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[62].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[62].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[63].reg32/r3/serial_out> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <[63].reg32/r2/serial_out> of sequential type is unconnected in block <RegisterBank>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RegisterBank, actual ratio is 53.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2176
+ Flip-Flops                                            : 2176
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : RegisterBank.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4217
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 80
+#      LUT5                        : 2299
+#      LUT6                        : 1835
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 2176
+#      FDR                         : 128
+#      FDRE                        : 2048
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 78
+#      IBUF                        : 45
+#      OBUFT                       : 33
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2176  out of  18224    11%  
+ Number of Slice LUTs:                 4216  out of   9112    46%  
+    Number used as Logic:              4216  out of   9112    46%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4216
+   Number with an unused Flip Flop:    2040  out of   4216    48%  
+   Number with an unused LUT:             0  out of   4216     0%  
+   Number of fully used LUT-FF pairs:  2176  out of   4216    51%  
+   Number of unique control sets:       128
+
+IO Utilization: 
+ Number of IOs:                          79
+ Number of bonded IOBs:                  79  out of    232    34%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 2176  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.507ns (Maximum Frequency: 663.460MHz)
+   Minimum input arrival time before clock: 9.790ns
+   Maximum output required time after clock: 7.813ns
+   Maximum combinational path delay: 13.285ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.507ns (frequency: 663.460MHz)
+  Total number of paths / destination ports: 4288 / 2176
+-------------------------------------------------------------------------
+Delay:               1.507ns (Levels of Logic = 1)
+  Source:            [0].reg32/r4/qdata_0 (FF)
+  Destination:       [0].reg32/r4/serial_out (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: [0].reg32/r4/qdata_0 to [0].reg32/r4/serial_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.447   0.755  [0].reg32/r4/qdata_0 ([0].reg32/r4/qdata_0)
+     LUT5:I3->O            1   0.203   0.000  [0].reg32/r4/Mmux_qdata[7]_pdata[7]_mux_3_OUT21 ([0].reg32/r4/qdata[7]_pdata[7]_mux_3_OUT<1>)
+     FDRE:D                    0.102          [0].reg32/r4/qdata_1
+    ----------------------------------------
+    Total                      1.507ns (0.752ns logic, 0.755ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 101418 / 6400
+-------------------------------------------------------------------------
+Offset:              9.790ns (Levels of Logic = 4)
+  Source:            reg_select<2> (PAD)
+  Destination:       [20].reg32/r4/qdata_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reg_select<2> to [20].reg32/r4/qdata_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           140   1.222   2.211  reg_select_2_IBUF (reg_select_2_IBUF)
+     LUT3:I0->O          184   0.205   2.383  _n0149<5>11 (_n0149<5>1)
+     LUT5:I0->O           40   0.203   1.750  Mmux_load_all241 (load_all<30>)
+     LUT5:I0->O           32   0.203   1.291  [30].reg32/r4/_n0022_inv1 ([30].reg32/r4/_n0022_inv)
+     FDRE:CE                   0.322          [30].reg32/r4/qdata_0
+    ----------------------------------------
+    Total                      9.790ns (2.155ns logic, 7.635ns route)
+                                       (22.0% logic, 78.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2176 / 33
+-------------------------------------------------------------------------
+Offset:              7.813ns (Levels of Logic = 5)
+  Source:            [26].reg32/r1/serial_out (FF)
+  Destination:       serial_out (PAD)
+  Source Clock:      clk rising
+
+  Data Path: [26].reg32/r1/serial_out to serial_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.924  [26].reg32/r1/serial_out ([26].reg32/r1/serial_out)
+     LUT5:I0->O            1   0.203   0.827  [26].reg32/Mmux_serial_ins<0>141 (serial_out_all<26>)
+     LUT6:I2->O            1   0.203   0.827  Mmux_serial_out_reg_122 (Mmux_serial_out_reg_122)
+     LUT6:I2->O            1   0.203   0.827  Mmux_serial_out_reg_7 (Mmux_serial_out_reg_7)
+     LUT6:I2->O            1   0.203   0.579  reg_select<5>321 (serial_out_reg)
+     OBUFT:I->O                2.571          serial_out_OBUFT (serial_out)
+    ----------------------------------------
+    Total                      7.813ns (3.830ns logic, 3.983ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1868 / 33
+-------------------------------------------------------------------------
+Delay:               13.285ns (Levels of Logic = 8)
+  Source:            reg_select<2> (PAD)
+  Destination:       serial_out (PAD)
+
+  Data Path: reg_select<2> to serial_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           140   1.222   2.211  reg_select_2_IBUF (reg_select_2_IBUF)
+     LUT3:I0->O          182   0.205   2.382  _n0117<5>21 (_n0117<5>2)
+     LUT5:I0->O           33   0.203   1.553  Mmux_shift_right_all591 (shift_right_all<62>)
+     LUT5:I1->O            1   0.203   0.000  Mmux_serial_out_reg_14_F (N2818)
+     MUXF7:I0->O           1   0.131   0.808  Mmux_serial_out_reg_14 (Mmux_serial_out_reg_14)
+     LUT6:I3->O            1   0.205   0.808  Mmux_serial_out_reg_8 (Mmux_serial_out_reg_8)
+     LUT6:I3->O            1   0.205   0.579  reg_select<5>321 (serial_out_reg)
+     OBUFT:I->O                2.571          serial_out_OBUFT (serial_out)
+    ----------------------------------------
+    Total                     13.285ns (4.945ns logic, 8.340ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.507|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.13 secs
+ 
+--> 
+
+Total memory usage is 4523016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  130 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,1523 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Correlation_32.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Correlation_32.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Correlation_32"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Correlation_32
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\rasool\IUT\t4\FPGA\HWs\HW4\HW4_project\Q2_1.v" into library work
+Parsing module <Correlation_32>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Correlation_32>.
+WARNING:HDLCompiler:413 - "E:\rasool\IUT\t4\FPGA\HWs\HW4\HW4_project\Q2_1.v" Line 51: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Correlation_32>.
+    Related source file is "E:\rasool\IUT\t4\FPGA\HWs\HW4\HW4_project\Q2_1.v".
+    Found 4-bit register for signal <Out_4>.
+    Found 2-bit adder for signal <n2174[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2177[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2180[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2183[4:0]> created at line 64.
+    Found 2-bit adder for signal <n2267[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2270[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2273[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2276[4:0]> created at line 64.
+    Found 2-bit adder for signal <n2360[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2363[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2366[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2369[4:0]> created at line 64.
+    Found 2-bit adder for signal <n2453[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2456[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2459[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2462[4:0]> created at line 64.
+    Found 2-bit adder for signal <n2546[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2549[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2552[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2555[4:0]> created at line 64.
+    Found 2-bit adder for signal <n2639[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2642[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2645[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2648[4:0]> created at line 64.
+    Found 2-bit adder for signal <n2732[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2735[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2738[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2741[4:0]> created at line 64.
+    Found 2-bit adder for signal <n2825[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2828[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2831[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2834[4:0]> created at line 64.
+    Found 2-bit adder for signal <n2918[1:0]> created at line 64.
+    Found 3-bit adder for signal <n2921[2:0]> created at line 64.
+    Found 4-bit adder for signal <n2924[3:0]> created at line 64.
+    Found 5-bit adder for signal <n2927[4:0]> created at line 64.
+    Found 2-bit adder for signal <n3011[1:0]> created at line 64.
+    Found 3-bit adder for signal <n3014[2:0]> created at line 64.
+    Found 4-bit adder for signal <n3017[3:0]> created at line 64.
+    Found 5-bit adder for signal <n3020[4:0]> created at line 64.
+    Found 2-bit adder for signal <n3104[1:0]> created at line 64.
+    Found 3-bit adder for signal <n3107[2:0]> created at line 64.
+    Found 4-bit adder for signal <n3110[3:0]> created at line 64.
+    Found 5-bit adder for signal <n3113[4:0]> created at line 64.
+    Found 2-bit adder for signal <n3197[1:0]> created at line 64.
+    Found 3-bit adder for signal <n3200[2:0]> created at line 64.
+    Found 4-bit adder for signal <n3203[3:0]> created at line 64.
+    Found 5-bit adder for signal <n3206[4:0]> created at line 64.
+    Found 2-bit adder for signal <n3290[1:0]> created at line 64.
+    Found 3-bit adder for signal <n3293[2:0]> created at line 64.
+    Found 4-bit adder for signal <n3296[3:0]> created at line 64.
+    Found 5-bit adder for signal <n3299[4:0]> created at line 64.
+    Found 2-bit adder for signal <n3383[1:0]> created at line 64.
+    Found 3-bit adder for signal <n3386[2:0]> created at line 64.
+    Found 4-bit adder for signal <n3389[3:0]> created at line 64.
+    Found 5-bit adder for signal <n3392[4:0]> created at line 64.
+    Found 2-bit adder for signal <n3476[1:0]> created at line 64.
+    Found 3-bit adder for signal <n3479[2:0]> created at line 64.
+    Found 4-bit adder for signal <n3482[3:0]> created at line 64.
+    Found 5-bit adder for signal <n3485[4:0]> created at line 64.
+    Found 2-bit adder for signal <n3569[1:0]> created at line 64.
+    Found 3-bit adder for signal <n3572[2:0]> created at line 64.
+    Found 4-bit adder for signal <n3575[3:0]> created at line 64.
+    Found 5-bit adder for signal <n3578[4:0]> created at line 64.
+    Found 6-bit adder for signal <_n3660> created at line 64.
+    Found 6-bit adder for signal <_n3661> created at line 64.
+    Found 6-bit adder for signal <_n3662> created at line 64.
+    Found 6-bit adder for signal <_n3663> created at line 64.
+    Found 6-bit adder for signal <_n3664> created at line 64.
+    Found 6-bit adder for signal <_n3665> created at line 64.
+    Found 6-bit adder for signal <_n3666> created at line 64.
+    Found 6-bit adder for signal <_n3667> created at line 64.
+    Found 6-bit adder for signal <_n3668> created at line 64.
+    Found 6-bit adder for signal <_n3669> created at line 64.
+    Found 6-bit adder for signal <_n3670> created at line 64.
+    Found 6-bit adder for signal <_n3671> created at line 64.
+    Found 6-bit adder for signal <_n3672> created at line 64.
+    Found 6-bit adder for signal <_n3673> created at line 64.
+    Found 6-bit adder for signal <_n3674> created at line 64.
+    Found 6-bit adder for signal <_n3675> created at line 64.
+    Found 6-bit adder for signal <_n3676> created at line 64.
+    Found 6-bit adder for signal <_n3677> created at line 64.
+    Found 6-bit adder for signal <_n3678> created at line 64.
+    Found 6-bit adder for signal <_n3679> created at line 64.
+    Found 6-bit adder for signal <_n3680> created at line 64.
+    Found 6-bit adder for signal <_n3681> created at line 64.
+    Found 6-bit adder for signal <_n3682> created at line 64.
+    Found 6-bit adder for signal <_n3683> created at line 64.
+    Found 6-bit adder for signal <_n3684> created at line 64.
+    Found 6-bit adder for signal <_n3685> created at line 64.
+    Found 6-bit adder for signal <BUS_0165_GND_1_o_add_62_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3687> created at line 64.
+    Found 6-bit adder for signal <_n3688> created at line 64.
+    Found 6-bit adder for signal <_n3689> created at line 64.
+    Found 6-bit adder for signal <_n3690> created at line 64.
+    Found 6-bit adder for signal <_n3691> created at line 64.
+    Found 6-bit adder for signal <_n3692> created at line 64.
+    Found 6-bit adder for signal <_n3693> created at line 64.
+    Found 6-bit adder for signal <_n3694> created at line 64.
+    Found 6-bit adder for signal <_n3695> created at line 64.
+    Found 6-bit adder for signal <_n3696> created at line 64.
+    Found 6-bit adder for signal <_n3697> created at line 64.
+    Found 6-bit adder for signal <_n3698> created at line 64.
+    Found 6-bit adder for signal <_n3699> created at line 64.
+    Found 6-bit adder for signal <_n3700> created at line 64.
+    Found 6-bit adder for signal <_n3701> created at line 64.
+    Found 6-bit adder for signal <_n3702> created at line 64.
+    Found 6-bit adder for signal <_n3703> created at line 64.
+    Found 6-bit adder for signal <_n3704> created at line 64.
+    Found 6-bit adder for signal <_n3705> created at line 64.
+    Found 6-bit adder for signal <_n3706> created at line 64.
+    Found 6-bit adder for signal <_n3707> created at line 64.
+    Found 6-bit adder for signal <_n3708> created at line 64.
+    Found 6-bit adder for signal <_n3709> created at line 64.
+    Found 6-bit adder for signal <_n3710> created at line 64.
+    Found 6-bit adder for signal <_n3711> created at line 64.
+    Found 6-bit adder for signal <_n3712> created at line 64.
+    Found 6-bit adder for signal <BUS_0356_GND_1_o_add_125_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3714> created at line 64.
+    Found 6-bit adder for signal <_n3715> created at line 64.
+    Found 6-bit adder for signal <_n3716> created at line 64.
+    Found 6-bit adder for signal <_n3717> created at line 64.
+    Found 6-bit adder for signal <_n3718> created at line 64.
+    Found 6-bit adder for signal <_n3719> created at line 64.
+    Found 6-bit adder for signal <_n3720> created at line 64.
+    Found 6-bit adder for signal <_n3721> created at line 64.
+    Found 6-bit adder for signal <_n3722> created at line 64.
+    Found 6-bit adder for signal <_n3723> created at line 64.
+    Found 6-bit adder for signal <_n3724> created at line 64.
+    Found 6-bit adder for signal <_n3725> created at line 64.
+    Found 6-bit adder for signal <_n3726> created at line 64.
+    Found 6-bit adder for signal <_n3727> created at line 64.
+    Found 6-bit adder for signal <_n3728> created at line 64.
+    Found 6-bit adder for signal <_n3729> created at line 64.
+    Found 6-bit adder for signal <_n3730> created at line 64.
+    Found 6-bit adder for signal <_n3731> created at line 64.
+    Found 6-bit adder for signal <_n3732> created at line 64.
+    Found 6-bit adder for signal <_n3733> created at line 64.
+    Found 6-bit adder for signal <_n3734> created at line 64.
+    Found 6-bit adder for signal <_n3735> created at line 64.
+    Found 6-bit adder for signal <_n3736> created at line 64.
+    Found 6-bit adder for signal <_n3737> created at line 64.
+    Found 6-bit adder for signal <_n3738> created at line 64.
+    Found 6-bit adder for signal <_n3739> created at line 64.
+    Found 6-bit adder for signal <BUS_0547_GND_1_o_add_188_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3741> created at line 64.
+    Found 6-bit adder for signal <_n3742> created at line 64.
+    Found 6-bit adder for signal <_n3743> created at line 64.
+    Found 6-bit adder for signal <_n3744> created at line 64.
+    Found 6-bit adder for signal <_n3745> created at line 64.
+    Found 6-bit adder for signal <_n3746> created at line 64.
+    Found 6-bit adder for signal <_n3747> created at line 64.
+    Found 6-bit adder for signal <_n3748> created at line 64.
+    Found 6-bit adder for signal <_n3749> created at line 64.
+    Found 6-bit adder for signal <_n3750> created at line 64.
+    Found 6-bit adder for signal <_n3751> created at line 64.
+    Found 6-bit adder for signal <_n3752> created at line 64.
+    Found 6-bit adder for signal <_n3753> created at line 64.
+    Found 6-bit adder for signal <_n3754> created at line 64.
+    Found 6-bit adder for signal <_n3755> created at line 64.
+    Found 6-bit adder for signal <_n3756> created at line 64.
+    Found 6-bit adder for signal <_n3757> created at line 64.
+    Found 6-bit adder for signal <_n3758> created at line 64.
+    Found 6-bit adder for signal <_n3759> created at line 64.
+    Found 6-bit adder for signal <_n3760> created at line 64.
+    Found 6-bit adder for signal <_n3761> created at line 64.
+    Found 6-bit adder for signal <_n3762> created at line 64.
+    Found 6-bit adder for signal <_n3763> created at line 64.
+    Found 6-bit adder for signal <_n3764> created at line 64.
+    Found 6-bit adder for signal <_n3765> created at line 64.
+    Found 6-bit adder for signal <_n3766> created at line 64.
+    Found 6-bit adder for signal <BUS_0738_GND_1_o_add_251_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3768> created at line 64.
+    Found 6-bit adder for signal <_n3769> created at line 64.
+    Found 6-bit adder for signal <_n3770> created at line 64.
+    Found 6-bit adder for signal <_n3771> created at line 64.
+    Found 6-bit adder for signal <_n3772> created at line 64.
+    Found 6-bit adder for signal <_n3773> created at line 64.
+    Found 6-bit adder for signal <_n3774> created at line 64.
+    Found 6-bit adder for signal <_n3775> created at line 64.
+    Found 6-bit adder for signal <_n3776> created at line 64.
+    Found 6-bit adder for signal <_n3777> created at line 64.
+    Found 6-bit adder for signal <_n3778> created at line 64.
+    Found 6-bit adder for signal <_n3779> created at line 64.
+    Found 6-bit adder for signal <_n3780> created at line 64.
+    Found 6-bit adder for signal <_n3781> created at line 64.
+    Found 6-bit adder for signal <_n3782> created at line 64.
+    Found 6-bit adder for signal <_n3783> created at line 64.
+    Found 6-bit adder for signal <_n3784> created at line 64.
+    Found 6-bit adder for signal <_n3785> created at line 64.
+    Found 6-bit adder for signal <_n3786> created at line 64.
+    Found 6-bit adder for signal <_n3787> created at line 64.
+    Found 6-bit adder for signal <_n3788> created at line 64.
+    Found 6-bit adder for signal <_n3789> created at line 64.
+    Found 6-bit adder for signal <_n3790> created at line 64.
+    Found 6-bit adder for signal <_n3791> created at line 64.
+    Found 6-bit adder for signal <_n3792> created at line 64.
+    Found 6-bit adder for signal <_n3793> created at line 64.
+    Found 6-bit adder for signal <BUS_0929_GND_1_o_add_314_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3795> created at line 64.
+    Found 6-bit adder for signal <_n3796> created at line 64.
+    Found 6-bit adder for signal <_n3797> created at line 64.
+    Found 6-bit adder for signal <_n3798> created at line 64.
+    Found 6-bit adder for signal <_n3799> created at line 64.
+    Found 6-bit adder for signal <_n3800> created at line 64.
+    Found 6-bit adder for signal <_n3801> created at line 64.
+    Found 6-bit adder for signal <_n3802> created at line 64.
+    Found 6-bit adder for signal <_n3803> created at line 64.
+    Found 6-bit adder for signal <_n3804> created at line 64.
+    Found 6-bit adder for signal <_n3805> created at line 64.
+    Found 6-bit adder for signal <_n3806> created at line 64.
+    Found 6-bit adder for signal <_n3807> created at line 64.
+    Found 6-bit adder for signal <_n3808> created at line 64.
+    Found 6-bit adder for signal <_n3809> created at line 64.
+    Found 6-bit adder for signal <_n3810> created at line 64.
+    Found 6-bit adder for signal <_n3811> created at line 64.
+    Found 6-bit adder for signal <_n3812> created at line 64.
+    Found 6-bit adder for signal <_n3813> created at line 64.
+    Found 6-bit adder for signal <_n3814> created at line 64.
+    Found 6-bit adder for signal <_n3815> created at line 64.
+    Found 6-bit adder for signal <_n3816> created at line 64.
+    Found 6-bit adder for signal <_n3817> created at line 64.
+    Found 6-bit adder for signal <_n3818> created at line 64.
+    Found 6-bit adder for signal <_n3819> created at line 64.
+    Found 6-bit adder for signal <_n3820> created at line 64.
+    Found 6-bit adder for signal <BUS_1120_GND_1_o_add_377_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3822> created at line 64.
+    Found 6-bit adder for signal <_n3823> created at line 64.
+    Found 6-bit adder for signal <_n3824> created at line 64.
+    Found 6-bit adder for signal <_n3825> created at line 64.
+    Found 6-bit adder for signal <_n3826> created at line 64.
+    Found 6-bit adder for signal <_n3827> created at line 64.
+    Found 6-bit adder for signal <_n3828> created at line 64.
+    Found 6-bit adder for signal <_n3829> created at line 64.
+    Found 6-bit adder for signal <_n3830> created at line 64.
+    Found 6-bit adder for signal <_n3831> created at line 64.
+    Found 6-bit adder for signal <_n3832> created at line 64.
+    Found 6-bit adder for signal <_n3833> created at line 64.
+    Found 6-bit adder for signal <_n3834> created at line 64.
+    Found 6-bit adder for signal <_n3835> created at line 64.
+    Found 6-bit adder for signal <_n3836> created at line 64.
+    Found 6-bit adder for signal <_n3837> created at line 64.
+    Found 6-bit adder for signal <_n3838> created at line 64.
+    Found 6-bit adder for signal <_n3839> created at line 64.
+    Found 6-bit adder for signal <_n3840> created at line 64.
+    Found 6-bit adder for signal <_n3841> created at line 64.
+    Found 6-bit adder for signal <_n3842> created at line 64.
+    Found 6-bit adder for signal <_n3843> created at line 64.
+    Found 6-bit adder for signal <_n3844> created at line 64.
+    Found 6-bit adder for signal <_n3845> created at line 64.
+    Found 6-bit adder for signal <_n3846> created at line 64.
+    Found 6-bit adder for signal <_n3847> created at line 64.
+    Found 6-bit adder for signal <BUS_1311_GND_1_o_add_440_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3849> created at line 64.
+    Found 6-bit adder for signal <_n3850> created at line 64.
+    Found 6-bit adder for signal <_n3851> created at line 64.
+    Found 6-bit adder for signal <_n3852> created at line 64.
+    Found 6-bit adder for signal <_n3853> created at line 64.
+    Found 6-bit adder for signal <_n3854> created at line 64.
+    Found 6-bit adder for signal <_n3855> created at line 64.
+    Found 6-bit adder for signal <_n3856> created at line 64.
+    Found 6-bit adder for signal <_n3857> created at line 64.
+    Found 6-bit adder for signal <_n3858> created at line 64.
+    Found 6-bit adder for signal <_n3859> created at line 64.
+    Found 6-bit adder for signal <_n3860> created at line 64.
+    Found 6-bit adder for signal <_n3861> created at line 64.
+    Found 6-bit adder for signal <_n3862> created at line 64.
+    Found 6-bit adder for signal <_n3863> created at line 64.
+    Found 6-bit adder for signal <_n3864> created at line 64.
+    Found 6-bit adder for signal <_n3865> created at line 64.
+    Found 6-bit adder for signal <_n3866> created at line 64.
+    Found 6-bit adder for signal <_n3867> created at line 64.
+    Found 6-bit adder for signal <_n3868> created at line 64.
+    Found 6-bit adder for signal <_n3869> created at line 64.
+    Found 6-bit adder for signal <_n3870> created at line 64.
+    Found 6-bit adder for signal <_n3871> created at line 64.
+    Found 6-bit adder for signal <_n3872> created at line 64.
+    Found 6-bit adder for signal <_n3873> created at line 64.
+    Found 6-bit adder for signal <_n3874> created at line 64.
+    Found 6-bit adder for signal <BUS_1502_GND_1_o_add_503_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3876> created at line 64.
+    Found 6-bit adder for signal <_n3877> created at line 64.
+    Found 6-bit adder for signal <_n3878> created at line 64.
+    Found 6-bit adder for signal <_n3879> created at line 64.
+    Found 6-bit adder for signal <_n3880> created at line 64.
+    Found 6-bit adder for signal <_n3881> created at line 64.
+    Found 6-bit adder for signal <_n3882> created at line 64.
+    Found 6-bit adder for signal <_n3883> created at line 64.
+    Found 6-bit adder for signal <_n3884> created at line 64.
+    Found 6-bit adder for signal <_n3885> created at line 64.
+    Found 6-bit adder for signal <_n3886> created at line 64.
+    Found 6-bit adder for signal <_n3887> created at line 64.
+    Found 6-bit adder for signal <_n3888> created at line 64.
+    Found 6-bit adder for signal <_n3889> created at line 64.
+    Found 6-bit adder for signal <_n3890> created at line 64.
+    Found 6-bit adder for signal <_n3891> created at line 64.
+    Found 6-bit adder for signal <_n3892> created at line 64.
+    Found 6-bit adder for signal <_n3893> created at line 64.
+    Found 6-bit adder for signal <_n3894> created at line 64.
+    Found 6-bit adder for signal <_n3895> created at line 64.
+    Found 6-bit adder for signal <_n3896> created at line 64.
+    Found 6-bit adder for signal <_n3897> created at line 64.
+    Found 6-bit adder for signal <_n3898> created at line 64.
+    Found 6-bit adder for signal <_n3899> created at line 64.
+    Found 6-bit adder for signal <_n3900> created at line 64.
+    Found 6-bit adder for signal <_n3901> created at line 64.
+    Found 6-bit adder for signal <BUS_1693_GND_1_o_add_566_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3903> created at line 64.
+    Found 6-bit adder for signal <_n3904> created at line 64.
+    Found 6-bit adder for signal <_n3905> created at line 64.
+    Found 6-bit adder for signal <_n3906> created at line 64.
+    Found 6-bit adder for signal <_n3907> created at line 64.
+    Found 6-bit adder for signal <_n3908> created at line 64.
+    Found 6-bit adder for signal <_n3909> created at line 64.
+    Found 6-bit adder for signal <_n3910> created at line 64.
+    Found 6-bit adder for signal <_n3911> created at line 64.
+    Found 6-bit adder for signal <_n3912> created at line 64.
+    Found 6-bit adder for signal <_n3913> created at line 64.
+    Found 6-bit adder for signal <_n3914> created at line 64.
+    Found 6-bit adder for signal <_n3915> created at line 64.
+    Found 6-bit adder for signal <_n3916> created at line 64.
+    Found 6-bit adder for signal <_n3917> created at line 64.
+    Found 6-bit adder for signal <_n3918> created at line 64.
+    Found 6-bit adder for signal <_n3919> created at line 64.
+    Found 6-bit adder for signal <_n3920> created at line 64.
+    Found 6-bit adder for signal <_n3921> created at line 64.
+    Found 6-bit adder for signal <_n3922> created at line 64.
+    Found 6-bit adder for signal <_n3923> created at line 64.
+    Found 6-bit adder for signal <_n3924> created at line 64.
+    Found 6-bit adder for signal <_n3925> created at line 64.
+    Found 6-bit adder for signal <_n3926> created at line 64.
+    Found 6-bit adder for signal <_n3927> created at line 64.
+    Found 6-bit adder for signal <_n3928> created at line 64.
+    Found 6-bit adder for signal <BUS_1884_GND_1_o_add_629_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3930> created at line 64.
+    Found 6-bit adder for signal <_n3931> created at line 64.
+    Found 6-bit adder for signal <_n3932> created at line 64.
+    Found 6-bit adder for signal <_n3933> created at line 64.
+    Found 6-bit adder for signal <_n3934> created at line 64.
+    Found 6-bit adder for signal <_n3935> created at line 64.
+    Found 6-bit adder for signal <_n3936> created at line 64.
+    Found 6-bit adder for signal <_n3937> created at line 64.
+    Found 6-bit adder for signal <_n3938> created at line 64.
+    Found 6-bit adder for signal <_n3939> created at line 64.
+    Found 6-bit adder for signal <_n3940> created at line 64.
+    Found 6-bit adder for signal <_n3941> created at line 64.
+    Found 6-bit adder for signal <_n3942> created at line 64.
+    Found 6-bit adder for signal <_n3943> created at line 64.
+    Found 6-bit adder for signal <_n3944> created at line 64.
+    Found 6-bit adder for signal <_n3945> created at line 64.
+    Found 6-bit adder for signal <_n3946> created at line 64.
+    Found 6-bit adder for signal <_n3947> created at line 64.
+    Found 6-bit adder for signal <_n3948> created at line 64.
+    Found 6-bit adder for signal <_n3949> created at line 64.
+    Found 6-bit adder for signal <_n3950> created at line 64.
+    Found 6-bit adder for signal <_n3951> created at line 64.
+    Found 6-bit adder for signal <_n3952> created at line 64.
+    Found 6-bit adder for signal <_n3953> created at line 64.
+    Found 6-bit adder for signal <_n3954> created at line 64.
+    Found 6-bit adder for signal <_n3955> created at line 64.
+    Found 6-bit adder for signal <BUS_2075_GND_1_o_add_692_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3957> created at line 64.
+    Found 6-bit adder for signal <_n3958> created at line 64.
+    Found 6-bit adder for signal <_n3959> created at line 64.
+    Found 6-bit adder for signal <_n3960> created at line 64.
+    Found 6-bit adder for signal <_n3961> created at line 64.
+    Found 6-bit adder for signal <_n3962> created at line 64.
+    Found 6-bit adder for signal <_n3963> created at line 64.
+    Found 6-bit adder for signal <_n3964> created at line 64.
+    Found 6-bit adder for signal <_n3965> created at line 64.
+    Found 6-bit adder for signal <_n3966> created at line 64.
+    Found 6-bit adder for signal <_n3967> created at line 64.
+    Found 6-bit adder for signal <_n3968> created at line 64.
+    Found 6-bit adder for signal <_n3969> created at line 64.
+    Found 6-bit adder for signal <_n3970> created at line 64.
+    Found 6-bit adder for signal <_n3971> created at line 64.
+    Found 6-bit adder for signal <_n3972> created at line 64.
+    Found 6-bit adder for signal <_n3973> created at line 64.
+    Found 6-bit adder for signal <_n3974> created at line 64.
+    Found 6-bit adder for signal <_n3975> created at line 64.
+    Found 6-bit adder for signal <_n3976> created at line 64.
+    Found 6-bit adder for signal <_n3977> created at line 64.
+    Found 6-bit adder for signal <_n3978> created at line 64.
+    Found 6-bit adder for signal <_n3979> created at line 64.
+    Found 6-bit adder for signal <_n3980> created at line 64.
+    Found 6-bit adder for signal <_n3981> created at line 64.
+    Found 6-bit adder for signal <_n3982> created at line 64.
+    Found 6-bit adder for signal <BUS_2266_GND_1_o_add_755_OUT> created at line 64.
+    Found 6-bit adder for signal <_n3984> created at line 64.
+    Found 6-bit adder for signal <_n3985> created at line 64.
+    Found 6-bit adder for signal <_n3986> created at line 64.
+    Found 6-bit adder for signal <_n3987> created at line 64.
+    Found 6-bit adder for signal <_n3988> created at line 64.
+    Found 6-bit adder for signal <_n3989> created at line 64.
+    Found 6-bit adder for signal <_n3990> created at line 64.
+    Found 6-bit adder for signal <_n3991> created at line 64.
+    Found 6-bit adder for signal <_n3992> created at line 64.
+    Found 6-bit adder for signal <_n3993> created at line 64.
+    Found 6-bit adder for signal <_n3994> created at line 64.
+    Found 6-bit adder for signal <_n3995> created at line 64.
+    Found 6-bit adder for signal <_n3996> created at line 64.
+    Found 6-bit adder for signal <_n3997> created at line 64.
+    Found 6-bit adder for signal <_n3998> created at line 64.
+    Found 6-bit adder for signal <_n3999> created at line 64.
+    Found 6-bit adder for signal <_n4000> created at line 64.
+    Found 6-bit adder for signal <_n4001> created at line 64.
+    Found 6-bit adder for signal <_n4002> created at line 64.
+    Found 6-bit adder for signal <_n4003> created at line 64.
+    Found 6-bit adder for signal <_n4004> created at line 64.
+    Found 6-bit adder for signal <_n4005> created at line 64.
+    Found 6-bit adder for signal <_n4006> created at line 64.
+    Found 6-bit adder for signal <_n4007> created at line 64.
+    Found 6-bit adder for signal <_n4008> created at line 64.
+    Found 6-bit adder for signal <_n4009> created at line 64.
+    Found 6-bit adder for signal <BUS_2457_GND_1_o_add_818_OUT> created at line 64.
+    Found 6-bit adder for signal <_n4011> created at line 64.
+    Found 6-bit adder for signal <_n4012> created at line 64.
+    Found 6-bit adder for signal <_n4013> created at line 64.
+    Found 6-bit adder for signal <_n4014> created at line 64.
+    Found 6-bit adder for signal <_n4015> created at line 64.
+    Found 6-bit adder for signal <_n4016> created at line 64.
+    Found 6-bit adder for signal <_n4017> created at line 64.
+    Found 6-bit adder for signal <_n4018> created at line 64.
+    Found 6-bit adder for signal <_n4019> created at line 64.
+    Found 6-bit adder for signal <_n4020> created at line 64.
+    Found 6-bit adder for signal <_n4021> created at line 64.
+    Found 6-bit adder for signal <_n4022> created at line 64.
+    Found 6-bit adder for signal <_n4023> created at line 64.
+    Found 6-bit adder for signal <_n4024> created at line 64.
+    Found 6-bit adder for signal <_n4025> created at line 64.
+    Found 6-bit adder for signal <_n4026> created at line 64.
+    Found 6-bit adder for signal <_n4027> created at line 64.
+    Found 6-bit adder for signal <_n4028> created at line 64.
+    Found 6-bit adder for signal <_n4029> created at line 64.
+    Found 6-bit adder for signal <_n4030> created at line 64.
+    Found 6-bit adder for signal <_n4031> created at line 64.
+    Found 6-bit adder for signal <_n4032> created at line 64.
+    Found 6-bit adder for signal <_n4033> created at line 64.
+    Found 6-bit adder for signal <_n4034> created at line 64.
+    Found 6-bit adder for signal <_n4035> created at line 64.
+    Found 6-bit adder for signal <_n4036> created at line 64.
+    Found 6-bit adder for signal <BUS_2648_GND_1_o_add_881_OUT> created at line 64.
+    Found 6-bit adder for signal <_n4038> created at line 64.
+    Found 6-bit adder for signal <_n4039> created at line 64.
+    Found 6-bit adder for signal <_n4040> created at line 64.
+    Found 6-bit adder for signal <_n4041> created at line 64.
+    Found 6-bit adder for signal <_n4042> created at line 64.
+    Found 6-bit adder for signal <_n4043> created at line 64.
+    Found 6-bit adder for signal <_n4044> created at line 64.
+    Found 6-bit adder for signal <_n4045> created at line 64.
+    Found 6-bit adder for signal <_n4046> created at line 64.
+    Found 6-bit adder for signal <_n4047> created at line 64.
+    Found 6-bit adder for signal <_n4048> created at line 64.
+    Found 6-bit adder for signal <_n4049> created at line 64.
+    Found 6-bit adder for signal <_n4050> created at line 64.
+    Found 6-bit adder for signal <_n4051> created at line 64.
+    Found 6-bit adder for signal <_n4052> created at line 64.
+    Found 6-bit adder for signal <_n4053> created at line 64.
+    Found 6-bit adder for signal <_n4054> created at line 64.
+    Found 6-bit adder for signal <_n4055> created at line 64.
+    Found 6-bit adder for signal <_n4056> created at line 64.
+    Found 6-bit adder for signal <_n4057> created at line 64.
+    Found 6-bit adder for signal <_n4058> created at line 64.
+    Found 6-bit adder for signal <_n4059> created at line 64.
+    Found 6-bit adder for signal <_n4060> created at line 64.
+    Found 6-bit adder for signal <_n4061> created at line 64.
+    Found 6-bit adder for signal <_n4062> created at line 64.
+    Found 6-bit adder for signal <_n4063> created at line 64.
+    Found 6-bit adder for signal <BUS_2839_GND_1_o_add_944_OUT> created at line 64.
+    Found 6-bit adder for signal <_n4065> created at line 64.
+    Found 6-bit adder for signal <_n4066> created at line 64.
+    Found 6-bit adder for signal <_n4067> created at line 64.
+    Found 6-bit adder for signal <_n4068> created at line 64.
+    Found 6-bit adder for signal <_n4069> created at line 64.
+    Found 6-bit adder for signal <_n4070> created at line 64.
+    Found 6-bit adder for signal <_n4071> created at line 64.
+    Found 6-bit adder for signal <_n4072> created at line 64.
+    Found 6-bit adder for signal <_n4073> created at line 64.
+    Found 6-bit adder for signal <_n4074> created at line 64.
+    Found 6-bit adder for signal <_n4075> created at line 64.
+    Found 6-bit adder for signal <_n4076> created at line 64.
+    Found 6-bit adder for signal <_n4077> created at line 64.
+    Found 6-bit adder for signal <_n4078> created at line 64.
+    Found 6-bit adder for signal <_n4079> created at line 64.
+    Found 6-bit adder for signal <_n4080> created at line 64.
+    Found 6-bit adder for signal <_n4081> created at line 64.
+    Found 6-bit adder for signal <_n4082> created at line 64.
+    Found 6-bit adder for signal <_n4083> created at line 64.
+    Found 6-bit adder for signal <_n4084> created at line 64.
+    Found 6-bit adder for signal <_n4085> created at line 64.
+    Found 6-bit adder for signal <_n4086> created at line 64.
+    Found 6-bit adder for signal <_n4087> created at line 64.
+    Found 6-bit adder for signal <_n4088> created at line 64.
+    Found 6-bit adder for signal <_n4089> created at line 64.
+    Found 6-bit adder for signal <_n4090> created at line 64.
+    Found 6-bit adder for signal <BUS_3030_GND_1_o_add_1007_OUT> created at line 64.
+    Found 1-bit comparator equal for signal <Num_1[0]_Target_Num[0]_equal_1_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[1]_Target_Num[1]_equal_2_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[2]_Target_Num[2]_equal_4_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[3]_Target_Num[3]_equal_6_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[4]_Target_Num[4]_equal_8_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[5]_Target_Num[5]_equal_10_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[6]_Target_Num[6]_equal_12_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[7]_Target_Num[7]_equal_14_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[8]_Target_Num[8]_equal_16_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[9]_Target_Num[9]_equal_18_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[10]_Target_Num[10]_equal_20_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[11]_Target_Num[11]_equal_22_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[12]_Target_Num[12]_equal_24_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[13]_Target_Num[13]_equal_26_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[14]_Target_Num[14]_equal_28_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[15]_Target_Num[15]_equal_30_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[16]_Target_Num[16]_equal_32_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[17]_Target_Num[17]_equal_34_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[18]_Target_Num[18]_equal_36_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[19]_Target_Num[19]_equal_38_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[20]_Target_Num[20]_equal_40_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[21]_Target_Num[21]_equal_42_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[22]_Target_Num[22]_equal_44_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[23]_Target_Num[23]_equal_46_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[24]_Target_Num[24]_equal_48_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[25]_Target_Num[25]_equal_50_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[26]_Target_Num[26]_equal_52_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[27]_Target_Num[27]_equal_54_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[28]_Target_Num[28]_equal_56_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[29]_Target_Num[29]_equal_58_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[30]_Target_Num[30]_equal_60_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_1[31]_Target_Num[31]_equal_62_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[0]_Target_Num[0]_equal_64_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[1]_Target_Num[1]_equal_65_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[2]_Target_Num[2]_equal_67_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[3]_Target_Num[3]_equal_69_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[4]_Target_Num[4]_equal_71_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[5]_Target_Num[5]_equal_73_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[6]_Target_Num[6]_equal_75_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[7]_Target_Num[7]_equal_77_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[8]_Target_Num[8]_equal_79_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[9]_Target_Num[9]_equal_81_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[10]_Target_Num[10]_equal_83_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[11]_Target_Num[11]_equal_85_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[12]_Target_Num[12]_equal_87_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[13]_Target_Num[13]_equal_89_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[14]_Target_Num[14]_equal_91_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[15]_Target_Num[15]_equal_93_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[16]_Target_Num[16]_equal_95_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[17]_Target_Num[17]_equal_97_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[18]_Target_Num[18]_equal_99_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[19]_Target_Num[19]_equal_101_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[20]_Target_Num[20]_equal_103_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[21]_Target_Num[21]_equal_105_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[22]_Target_Num[22]_equal_107_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[23]_Target_Num[23]_equal_109_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[24]_Target_Num[24]_equal_111_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[25]_Target_Num[25]_equal_113_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[26]_Target_Num[26]_equal_115_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[27]_Target_Num[27]_equal_117_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[28]_Target_Num[28]_equal_119_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[29]_Target_Num[29]_equal_121_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[30]_Target_Num[30]_equal_123_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_2[31]_Target_Num[31]_equal_125_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[0]_Target_Num[0]_equal_127_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[1]_Target_Num[1]_equal_128_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[2]_Target_Num[2]_equal_130_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[3]_Target_Num[3]_equal_132_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[4]_Target_Num[4]_equal_134_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[5]_Target_Num[5]_equal_136_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[6]_Target_Num[6]_equal_138_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[7]_Target_Num[7]_equal_140_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[8]_Target_Num[8]_equal_142_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[9]_Target_Num[9]_equal_144_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[10]_Target_Num[10]_equal_146_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[11]_Target_Num[11]_equal_148_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[12]_Target_Num[12]_equal_150_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[13]_Target_Num[13]_equal_152_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[14]_Target_Num[14]_equal_154_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[15]_Target_Num[15]_equal_156_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[16]_Target_Num[16]_equal_158_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[17]_Target_Num[17]_equal_160_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[18]_Target_Num[18]_equal_162_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[19]_Target_Num[19]_equal_164_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[20]_Target_Num[20]_equal_166_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[21]_Target_Num[21]_equal_168_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[22]_Target_Num[22]_equal_170_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[23]_Target_Num[23]_equal_172_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[24]_Target_Num[24]_equal_174_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[25]_Target_Num[25]_equal_176_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[26]_Target_Num[26]_equal_178_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[27]_Target_Num[27]_equal_180_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[28]_Target_Num[28]_equal_182_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[29]_Target_Num[29]_equal_184_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[30]_Target_Num[30]_equal_186_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_3[31]_Target_Num[31]_equal_188_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[0]_Target_Num[0]_equal_190_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[1]_Target_Num[1]_equal_191_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[2]_Target_Num[2]_equal_193_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[3]_Target_Num[3]_equal_195_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[4]_Target_Num[4]_equal_197_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[5]_Target_Num[5]_equal_199_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[6]_Target_Num[6]_equal_201_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[7]_Target_Num[7]_equal_203_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[8]_Target_Num[8]_equal_205_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[9]_Target_Num[9]_equal_207_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[10]_Target_Num[10]_equal_209_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[11]_Target_Num[11]_equal_211_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[12]_Target_Num[12]_equal_213_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[13]_Target_Num[13]_equal_215_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[14]_Target_Num[14]_equal_217_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[15]_Target_Num[15]_equal_219_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[16]_Target_Num[16]_equal_221_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[17]_Target_Num[17]_equal_223_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[18]_Target_Num[18]_equal_225_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[19]_Target_Num[19]_equal_227_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[20]_Target_Num[20]_equal_229_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[21]_Target_Num[21]_equal_231_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[22]_Target_Num[22]_equal_233_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[23]_Target_Num[23]_equal_235_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[24]_Target_Num[24]_equal_237_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[25]_Target_Num[25]_equal_239_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[26]_Target_Num[26]_equal_241_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[27]_Target_Num[27]_equal_243_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[28]_Target_Num[28]_equal_245_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[29]_Target_Num[29]_equal_247_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[30]_Target_Num[30]_equal_249_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_4[31]_Target_Num[31]_equal_251_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[0]_Target_Num[0]_equal_253_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[1]_Target_Num[1]_equal_254_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[2]_Target_Num[2]_equal_256_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[3]_Target_Num[3]_equal_258_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[4]_Target_Num[4]_equal_260_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[5]_Target_Num[5]_equal_262_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[6]_Target_Num[6]_equal_264_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[7]_Target_Num[7]_equal_266_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[8]_Target_Num[8]_equal_268_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[9]_Target_Num[9]_equal_270_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[10]_Target_Num[10]_equal_272_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[11]_Target_Num[11]_equal_274_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[12]_Target_Num[12]_equal_276_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[13]_Target_Num[13]_equal_278_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[14]_Target_Num[14]_equal_280_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[15]_Target_Num[15]_equal_282_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[16]_Target_Num[16]_equal_284_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[17]_Target_Num[17]_equal_286_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[18]_Target_Num[18]_equal_288_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[19]_Target_Num[19]_equal_290_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[20]_Target_Num[20]_equal_292_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[21]_Target_Num[21]_equal_294_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[22]_Target_Num[22]_equal_296_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[23]_Target_Num[23]_equal_298_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[24]_Target_Num[24]_equal_300_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[25]_Target_Num[25]_equal_302_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[26]_Target_Num[26]_equal_304_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[27]_Target_Num[27]_equal_306_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[28]_Target_Num[28]_equal_308_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[29]_Target_Num[29]_equal_310_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[30]_Target_Num[30]_equal_312_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_5[31]_Target_Num[31]_equal_314_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[0]_Target_Num[0]_equal_316_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[1]_Target_Num[1]_equal_317_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[2]_Target_Num[2]_equal_319_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[3]_Target_Num[3]_equal_321_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[4]_Target_Num[4]_equal_323_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[5]_Target_Num[5]_equal_325_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[6]_Target_Num[6]_equal_327_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[7]_Target_Num[7]_equal_329_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[8]_Target_Num[8]_equal_331_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[9]_Target_Num[9]_equal_333_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[10]_Target_Num[10]_equal_335_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[11]_Target_Num[11]_equal_337_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[12]_Target_Num[12]_equal_339_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[13]_Target_Num[13]_equal_341_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[14]_Target_Num[14]_equal_343_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[15]_Target_Num[15]_equal_345_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[16]_Target_Num[16]_equal_347_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[17]_Target_Num[17]_equal_349_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[18]_Target_Num[18]_equal_351_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[19]_Target_Num[19]_equal_353_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[20]_Target_Num[20]_equal_355_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[21]_Target_Num[21]_equal_357_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[22]_Target_Num[22]_equal_359_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[23]_Target_Num[23]_equal_361_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[24]_Target_Num[24]_equal_363_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[25]_Target_Num[25]_equal_365_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[26]_Target_Num[26]_equal_367_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[27]_Target_Num[27]_equal_369_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[28]_Target_Num[28]_equal_371_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[29]_Target_Num[29]_equal_373_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[30]_Target_Num[30]_equal_375_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_6[31]_Target_Num[31]_equal_377_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[0]_Target_Num[0]_equal_379_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[1]_Target_Num[1]_equal_380_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[2]_Target_Num[2]_equal_382_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[3]_Target_Num[3]_equal_384_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[4]_Target_Num[4]_equal_386_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[5]_Target_Num[5]_equal_388_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[6]_Target_Num[6]_equal_390_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[7]_Target_Num[7]_equal_392_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[8]_Target_Num[8]_equal_394_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[9]_Target_Num[9]_equal_396_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[10]_Target_Num[10]_equal_398_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[11]_Target_Num[11]_equal_400_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[12]_Target_Num[12]_equal_402_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[13]_Target_Num[13]_equal_404_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[14]_Target_Num[14]_equal_406_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[15]_Target_Num[15]_equal_408_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[16]_Target_Num[16]_equal_410_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[17]_Target_Num[17]_equal_412_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[18]_Target_Num[18]_equal_414_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[19]_Target_Num[19]_equal_416_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[20]_Target_Num[20]_equal_418_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[21]_Target_Num[21]_equal_420_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[22]_Target_Num[22]_equal_422_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[23]_Target_Num[23]_equal_424_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[24]_Target_Num[24]_equal_426_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[25]_Target_Num[25]_equal_428_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[26]_Target_Num[26]_equal_430_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[27]_Target_Num[27]_equal_432_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[28]_Target_Num[28]_equal_434_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[29]_Target_Num[29]_equal_436_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[30]_Target_Num[30]_equal_438_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_7[31]_Target_Num[31]_equal_440_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[0]_Target_Num[0]_equal_442_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[1]_Target_Num[1]_equal_443_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[2]_Target_Num[2]_equal_445_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[3]_Target_Num[3]_equal_447_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[4]_Target_Num[4]_equal_449_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[5]_Target_Num[5]_equal_451_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[6]_Target_Num[6]_equal_453_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[7]_Target_Num[7]_equal_455_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[8]_Target_Num[8]_equal_457_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[9]_Target_Num[9]_equal_459_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[10]_Target_Num[10]_equal_461_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[11]_Target_Num[11]_equal_463_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[12]_Target_Num[12]_equal_465_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[13]_Target_Num[13]_equal_467_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[14]_Target_Num[14]_equal_469_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[15]_Target_Num[15]_equal_471_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[16]_Target_Num[16]_equal_473_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[17]_Target_Num[17]_equal_475_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[18]_Target_Num[18]_equal_477_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[19]_Target_Num[19]_equal_479_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[20]_Target_Num[20]_equal_481_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[21]_Target_Num[21]_equal_483_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[22]_Target_Num[22]_equal_485_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[23]_Target_Num[23]_equal_487_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[24]_Target_Num[24]_equal_489_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[25]_Target_Num[25]_equal_491_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[26]_Target_Num[26]_equal_493_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[27]_Target_Num[27]_equal_495_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[28]_Target_Num[28]_equal_497_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[29]_Target_Num[29]_equal_499_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[30]_Target_Num[30]_equal_501_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_8[31]_Target_Num[31]_equal_503_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[0]_Target_Num[0]_equal_505_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[1]_Target_Num[1]_equal_506_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[2]_Target_Num[2]_equal_508_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[3]_Target_Num[3]_equal_510_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[4]_Target_Num[4]_equal_512_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[5]_Target_Num[5]_equal_514_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[6]_Target_Num[6]_equal_516_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[7]_Target_Num[7]_equal_518_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[8]_Target_Num[8]_equal_520_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[9]_Target_Num[9]_equal_522_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[10]_Target_Num[10]_equal_524_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[11]_Target_Num[11]_equal_526_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[12]_Target_Num[12]_equal_528_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[13]_Target_Num[13]_equal_530_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[14]_Target_Num[14]_equal_532_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[15]_Target_Num[15]_equal_534_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[16]_Target_Num[16]_equal_536_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[17]_Target_Num[17]_equal_538_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[18]_Target_Num[18]_equal_540_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[19]_Target_Num[19]_equal_542_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[20]_Target_Num[20]_equal_544_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[21]_Target_Num[21]_equal_546_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[22]_Target_Num[22]_equal_548_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[23]_Target_Num[23]_equal_550_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[24]_Target_Num[24]_equal_552_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[25]_Target_Num[25]_equal_554_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[26]_Target_Num[26]_equal_556_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[27]_Target_Num[27]_equal_558_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[28]_Target_Num[28]_equal_560_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[29]_Target_Num[29]_equal_562_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[30]_Target_Num[30]_equal_564_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_9[31]_Target_Num[31]_equal_566_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[0]_Target_Num[0]_equal_568_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[1]_Target_Num[1]_equal_569_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[2]_Target_Num[2]_equal_571_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[3]_Target_Num[3]_equal_573_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[4]_Target_Num[4]_equal_575_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[5]_Target_Num[5]_equal_577_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[6]_Target_Num[6]_equal_579_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[7]_Target_Num[7]_equal_581_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[8]_Target_Num[8]_equal_583_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[9]_Target_Num[9]_equal_585_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[10]_Target_Num[10]_equal_587_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[11]_Target_Num[11]_equal_589_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[12]_Target_Num[12]_equal_591_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[13]_Target_Num[13]_equal_593_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[14]_Target_Num[14]_equal_595_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[15]_Target_Num[15]_equal_597_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[16]_Target_Num[16]_equal_599_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[17]_Target_Num[17]_equal_601_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[18]_Target_Num[18]_equal_603_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[19]_Target_Num[19]_equal_605_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[20]_Target_Num[20]_equal_607_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[21]_Target_Num[21]_equal_609_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[22]_Target_Num[22]_equal_611_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[23]_Target_Num[23]_equal_613_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[24]_Target_Num[24]_equal_615_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[25]_Target_Num[25]_equal_617_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[26]_Target_Num[26]_equal_619_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[27]_Target_Num[27]_equal_621_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[28]_Target_Num[28]_equal_623_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[29]_Target_Num[29]_equal_625_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[30]_Target_Num[30]_equal_627_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_10[31]_Target_Num[31]_equal_629_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[0]_Target_Num[0]_equal_631_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[1]_Target_Num[1]_equal_632_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[2]_Target_Num[2]_equal_634_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[3]_Target_Num[3]_equal_636_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[4]_Target_Num[4]_equal_638_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[5]_Target_Num[5]_equal_640_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[6]_Target_Num[6]_equal_642_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[7]_Target_Num[7]_equal_644_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[8]_Target_Num[8]_equal_646_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[9]_Target_Num[9]_equal_648_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[10]_Target_Num[10]_equal_650_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[11]_Target_Num[11]_equal_652_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[12]_Target_Num[12]_equal_654_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[13]_Target_Num[13]_equal_656_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[14]_Target_Num[14]_equal_658_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[15]_Target_Num[15]_equal_660_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[16]_Target_Num[16]_equal_662_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[17]_Target_Num[17]_equal_664_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[18]_Target_Num[18]_equal_666_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[19]_Target_Num[19]_equal_668_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[20]_Target_Num[20]_equal_670_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[21]_Target_Num[21]_equal_672_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[22]_Target_Num[22]_equal_674_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[23]_Target_Num[23]_equal_676_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[24]_Target_Num[24]_equal_678_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[25]_Target_Num[25]_equal_680_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[26]_Target_Num[26]_equal_682_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[27]_Target_Num[27]_equal_684_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[28]_Target_Num[28]_equal_686_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[29]_Target_Num[29]_equal_688_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[30]_Target_Num[30]_equal_690_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_11[31]_Target_Num[31]_equal_692_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[0]_Target_Num[0]_equal_694_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[1]_Target_Num[1]_equal_695_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[2]_Target_Num[2]_equal_697_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[3]_Target_Num[3]_equal_699_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[4]_Target_Num[4]_equal_701_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[5]_Target_Num[5]_equal_703_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[6]_Target_Num[6]_equal_705_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[7]_Target_Num[7]_equal_707_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[8]_Target_Num[8]_equal_709_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[9]_Target_Num[9]_equal_711_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[10]_Target_Num[10]_equal_713_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[11]_Target_Num[11]_equal_715_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[12]_Target_Num[12]_equal_717_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[13]_Target_Num[13]_equal_719_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[14]_Target_Num[14]_equal_721_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[15]_Target_Num[15]_equal_723_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[16]_Target_Num[16]_equal_725_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[17]_Target_Num[17]_equal_727_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[18]_Target_Num[18]_equal_729_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[19]_Target_Num[19]_equal_731_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[20]_Target_Num[20]_equal_733_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[21]_Target_Num[21]_equal_735_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[22]_Target_Num[22]_equal_737_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[23]_Target_Num[23]_equal_739_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[24]_Target_Num[24]_equal_741_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[25]_Target_Num[25]_equal_743_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[26]_Target_Num[26]_equal_745_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[27]_Target_Num[27]_equal_747_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[28]_Target_Num[28]_equal_749_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[29]_Target_Num[29]_equal_751_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[30]_Target_Num[30]_equal_753_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_12[31]_Target_Num[31]_equal_755_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[0]_Target_Num[0]_equal_757_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[1]_Target_Num[1]_equal_758_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[2]_Target_Num[2]_equal_760_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[3]_Target_Num[3]_equal_762_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[4]_Target_Num[4]_equal_764_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[5]_Target_Num[5]_equal_766_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[6]_Target_Num[6]_equal_768_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[7]_Target_Num[7]_equal_770_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[8]_Target_Num[8]_equal_772_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[9]_Target_Num[9]_equal_774_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[10]_Target_Num[10]_equal_776_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[11]_Target_Num[11]_equal_778_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[12]_Target_Num[12]_equal_780_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[13]_Target_Num[13]_equal_782_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[14]_Target_Num[14]_equal_784_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[15]_Target_Num[15]_equal_786_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[16]_Target_Num[16]_equal_788_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[17]_Target_Num[17]_equal_790_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[18]_Target_Num[18]_equal_792_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[19]_Target_Num[19]_equal_794_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[20]_Target_Num[20]_equal_796_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[21]_Target_Num[21]_equal_798_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[22]_Target_Num[22]_equal_800_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[23]_Target_Num[23]_equal_802_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[24]_Target_Num[24]_equal_804_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[25]_Target_Num[25]_equal_806_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[26]_Target_Num[26]_equal_808_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[27]_Target_Num[27]_equal_810_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[28]_Target_Num[28]_equal_812_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[29]_Target_Num[29]_equal_814_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[30]_Target_Num[30]_equal_816_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_13[31]_Target_Num[31]_equal_818_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[0]_Target_Num[0]_equal_820_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[1]_Target_Num[1]_equal_821_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[2]_Target_Num[2]_equal_823_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[3]_Target_Num[3]_equal_825_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[4]_Target_Num[4]_equal_827_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[5]_Target_Num[5]_equal_829_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[6]_Target_Num[6]_equal_831_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[7]_Target_Num[7]_equal_833_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[8]_Target_Num[8]_equal_835_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[9]_Target_Num[9]_equal_837_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[10]_Target_Num[10]_equal_839_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[11]_Target_Num[11]_equal_841_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[12]_Target_Num[12]_equal_843_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[13]_Target_Num[13]_equal_845_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[14]_Target_Num[14]_equal_847_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[15]_Target_Num[15]_equal_849_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[16]_Target_Num[16]_equal_851_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[17]_Target_Num[17]_equal_853_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[18]_Target_Num[18]_equal_855_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[19]_Target_Num[19]_equal_857_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[20]_Target_Num[20]_equal_859_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[21]_Target_Num[21]_equal_861_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[22]_Target_Num[22]_equal_863_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[23]_Target_Num[23]_equal_865_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[24]_Target_Num[24]_equal_867_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[25]_Target_Num[25]_equal_869_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[26]_Target_Num[26]_equal_871_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[27]_Target_Num[27]_equal_873_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[28]_Target_Num[28]_equal_875_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[29]_Target_Num[29]_equal_877_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[30]_Target_Num[30]_equal_879_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_14[31]_Target_Num[31]_equal_881_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[0]_Target_Num[0]_equal_883_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[1]_Target_Num[1]_equal_884_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[2]_Target_Num[2]_equal_886_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[3]_Target_Num[3]_equal_888_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[4]_Target_Num[4]_equal_890_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[5]_Target_Num[5]_equal_892_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[6]_Target_Num[6]_equal_894_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[7]_Target_Num[7]_equal_896_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[8]_Target_Num[8]_equal_898_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[9]_Target_Num[9]_equal_900_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[10]_Target_Num[10]_equal_902_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[11]_Target_Num[11]_equal_904_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[12]_Target_Num[12]_equal_906_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[13]_Target_Num[13]_equal_908_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[14]_Target_Num[14]_equal_910_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[15]_Target_Num[15]_equal_912_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[16]_Target_Num[16]_equal_914_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[17]_Target_Num[17]_equal_916_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[18]_Target_Num[18]_equal_918_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[19]_Target_Num[19]_equal_920_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[20]_Target_Num[20]_equal_922_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[21]_Target_Num[21]_equal_924_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[22]_Target_Num[22]_equal_926_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[23]_Target_Num[23]_equal_928_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[24]_Target_Num[24]_equal_930_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[25]_Target_Num[25]_equal_932_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[26]_Target_Num[26]_equal_934_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[27]_Target_Num[27]_equal_936_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[28]_Target_Num[28]_equal_938_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[29]_Target_Num[29]_equal_940_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[30]_Target_Num[30]_equal_942_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_15[31]_Target_Num[31]_equal_944_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[0]_Target_Num[0]_equal_946_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[1]_Target_Num[1]_equal_947_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[2]_Target_Num[2]_equal_949_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[3]_Target_Num[3]_equal_951_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[4]_Target_Num[4]_equal_953_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[5]_Target_Num[5]_equal_955_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[6]_Target_Num[6]_equal_957_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[7]_Target_Num[7]_equal_959_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[8]_Target_Num[8]_equal_961_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[9]_Target_Num[9]_equal_963_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[10]_Target_Num[10]_equal_965_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[11]_Target_Num[11]_equal_967_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[12]_Target_Num[12]_equal_969_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[13]_Target_Num[13]_equal_971_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[14]_Target_Num[14]_equal_973_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[15]_Target_Num[15]_equal_975_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[16]_Target_Num[16]_equal_977_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[17]_Target_Num[17]_equal_979_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[18]_Target_Num[18]_equal_981_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[19]_Target_Num[19]_equal_983_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[20]_Target_Num[20]_equal_985_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[21]_Target_Num[21]_equal_987_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[22]_Target_Num[22]_equal_989_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[23]_Target_Num[23]_equal_991_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[24]_Target_Num[24]_equal_993_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[25]_Target_Num[25]_equal_995_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[26]_Target_Num[26]_equal_997_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[27]_Target_Num[27]_equal_999_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[28]_Target_Num[28]_equal_1001_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[29]_Target_Num[29]_equal_1003_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[30]_Target_Num[30]_equal_1005_o> created at line 64
+    Found 1-bit comparator equal for signal <Num_16[31]_Target_Num[31]_equal_1007_o> created at line 64
+    Found 6-bit comparator lessequal for signal <n1008> created at line 49
+    Found 6-bit comparator lessequal for signal <n1012> created at line 49
+    Found 6-bit comparator lessequal for signal <n1016> created at line 49
+    Found 6-bit comparator lessequal for signal <n1020> created at line 49
+    Found 6-bit comparator lessequal for signal <n1024> created at line 49
+    Found 6-bit comparator lessequal for signal <n1028> created at line 49
+    Found 6-bit comparator lessequal for signal <n1032> created at line 49
+    Found 6-bit comparator lessequal for signal <n1036> created at line 49
+    Found 6-bit comparator lessequal for signal <n1040> created at line 49
+    Found 6-bit comparator lessequal for signal <n1044> created at line 49
+    Found 6-bit comparator lessequal for signal <n1048> created at line 49
+    Found 6-bit comparator lessequal for signal <n1052> created at line 49
+    Found 6-bit comparator lessequal for signal <n1056> created at line 49
+    Found 6-bit comparator lessequal for signal <n1060> created at line 49
+    Found 6-bit comparator lessequal for signal <n1064> created at line 49
+    Summary:
+	inferred 496 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred 527 Comparator(s).
+	inferred  28 Multiplexer(s).
+Unit <Correlation_32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 496
+ 2-bit adder                                           : 16
+ 3-bit adder                                           : 16
+ 4-bit adder                                           : 16
+ 5-bit adder                                           : 16
+ 6-bit adder                                           : 432
+# Registers                                            : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 527
+ 1-bit comparator equal                                : 512
+ 6-bit comparator lessequal                            : 15
+# Multiplexers                                         : 28
+ 4-bit 2-to-1 multiplexer                              : 14
+ 6-bit 2-to-1 multiplexer                              : 14
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0356_GND_1_o_add_125_OUT_Madd1> :
+ 	<Madd__n3688> in block <Correlation_32>, 	<Madd__n3689_Madd> in block <Correlation_32>, 	<Madd__n3693> in block <Correlation_32>, 	<Madd__n3694_Madd> in block <Correlation_32>, 	<Madd__n3690> in block <Correlation_32>, 	<Madd__n3695_Madd> in block <Correlation_32>, 	<Madd__n3698> in block <Correlation_32>, 	<Madd__n3699_Madd> in block <Correlation_32>, 	<Madd__n3701> in block <Correlation_32>, 	<Madd__n3702_Madd> in block <Correlation_32>, 	<Madd__n3705> in block <Correlation_32>, 	<Madd__n3706_Madd> in block <Correlation_32>, 	<Madd__n3708> in block <Correlation_32>, 	<Madd__n3709_Madd> in block <Correlation_32>, 	<Madd_n2267[1:0]> in block <Correlation_32>, 	<Madd_n2273[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_0356_GND_1_o_add_125_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0165_GND_1_o_add_62_OUT_Madd1> :
+ 	<Madd__n3661> in block <Correlation_32>, 	<Madd__n3662_Madd> in block <Correlation_32>, 	<Madd__n3666> in block <Correlation_32>, 	<Madd__n3667_Madd> in block <Correlation_32>, 	<Madd__n3663> in block <Correlation_32>, 	<Madd__n3668_Madd> in block <Correlation_32>, 	<Madd__n3671> in block <Correlation_32>, 	<Madd__n3672_Madd> in block <Correlation_32>, 	<Madd__n3674> in block <Correlation_32>, 	<Madd__n3675_Madd> in block <Correlation_32>, 	<Madd__n3678> in block <Correlation_32>, 	<Madd__n3679_Madd> in block <Correlation_32>, 	<Madd__n3680> in block <Correlation_32>, 	<Madd__n3682_Madd> in block <Correlation_32>, 	<Madd_n2174[1:0]> in block <Correlation_32>, 	<Madd_n2180[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_0165_GND_1_o_add_62_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0547_GND_1_o_add_188_OUT_Madd1> :
+ 	<Madd__n3715> in block <Correlation_32>, 	<Madd__n3716_Madd> in block <Correlation_32>, 	<Madd__n3720> in block <Correlation_32>, 	<Madd__n3721_Madd> in block <Correlation_32>, 	<Madd__n3717> in block <Correlation_32>, 	<Madd__n3722_Madd> in block <Correlation_32>, 	<Madd__n3725> in block <Correlation_32>, 	<Madd__n3726_Madd> in block <Correlation_32>, 	<Madd__n3728> in block <Correlation_32>, 	<Madd__n3729_Madd> in block <Correlation_32>, 	<Madd__n3732> in block <Correlation_32>, 	<Madd__n3733_Madd> in block <Correlation_32>, 	<Madd__n3735> in block <Correlation_32>, 	<Madd__n3736_Madd> in block <Correlation_32>, 	<Madd_n2360[1:0]> in block <Correlation_32>, 	<Madd_n2366[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_0547_GND_1_o_add_188_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0738_GND_1_o_add_251_OUT_Madd1> :
+ 	<Madd__n3742> in block <Correlation_32>, 	<Madd__n3743_Madd> in block <Correlation_32>, 	<Madd__n3747> in block <Correlation_32>, 	<Madd__n3748_Madd> in block <Correlation_32>, 	<Madd__n3744> in block <Correlation_32>, 	<Madd__n3749_Madd> in block <Correlation_32>, 	<Madd__n3752> in block <Correlation_32>, 	<Madd__n3753_Madd> in block <Correlation_32>, 	<Madd__n3755> in block <Correlation_32>, 	<Madd__n3756_Madd> in block <Correlation_32>, 	<Madd__n3759> in block <Correlation_32>, 	<Madd__n3760_Madd> in block <Correlation_32>, 	<Madd__n3762> in block <Correlation_32>, 	<Madd__n3763_Madd> in block <Correlation_32>, 	<Madd_n2453[1:0]> in block <Correlation_32>, 	<Madd_n2459[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_0738_GND_1_o_add_251_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0929_GND_1_o_add_314_OUT_Madd1> :
+ 	<Madd__n3769> in block <Correlation_32>, 	<Madd__n3770_Madd> in block <Correlation_32>, 	<Madd__n3774> in block <Correlation_32>, 	<Madd__n3775_Madd> in block <Correlation_32>, 	<Madd__n3771> in block <Correlation_32>, 	<Madd__n3776_Madd> in block <Correlation_32>, 	<Madd__n3778> in block <Correlation_32>, 	<Madd__n3780_Madd> in block <Correlation_32>, 	<Madd__n3782> in block <Correlation_32>, 	<Madd__n3783_Madd> in block <Correlation_32>, 	<Madd__n3786> in block <Correlation_32>, 	<Madd__n3787_Madd> in block <Correlation_32>, 	<Madd__n3789> in block <Correlation_32>, 	<Madd__n3790_Madd> in block <Correlation_32>, 	<Madd_n2546[1:0]> in block <Correlation_32>, 	<Madd_n2552[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_0929_GND_1_o_add_314_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_1120_GND_1_o_add_377_OUT_Madd1> :
+ 	<Madd__n3796> in block <Correlation_32>, 	<Madd__n3797_Madd> in block <Correlation_32>, 	<Madd__n3801> in block <Correlation_32>, 	<Madd__n3802_Madd> in block <Correlation_32>, 	<Madd__n3798> in block <Correlation_32>, 	<Madd__n3803_Madd> in block <Correlation_32>, 	<Madd__n3806> in block <Correlation_32>, 	<Madd__n3807_Madd> in block <Correlation_32>, 	<Madd__n3809> in block <Correlation_32>, 	<Madd__n3810_Madd> in block <Correlation_32>, 	<Madd__n3813> in block <Correlation_32>, 	<Madd__n3814_Madd> in block <Correlation_32>, 	<Madd__n3816> in block <Correlation_32>, 	<Madd__n3817_Madd> in block <Correlation_32>, 	<Madd_n2639[1:0]> in block <Correlation_32>, 	<Madd_n2645[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_1120_GND_1_o_add_377_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_1311_GND_1_o_add_440_OUT_Madd1> :
+ 	<Madd__n3823> in block <Correlation_32>, 	<Madd__n3824_Madd> in block <Correlation_32>, 	<Madd__n3828> in block <Correlation_32>, 	<Madd__n3829_Madd> in block <Correlation_32>, 	<Madd__n3825> in block <Correlation_32>, 	<Madd__n3830_Madd> in block <Correlation_32>, 	<Madd__n3833> in block <Correlation_32>, 	<Madd__n3834_Madd> in block <Correlation_32>, 	<Madd__n3836> in block <Correlation_32>, 	<Madd__n3837_Madd> in block <Correlation_32>, 	<Madd__n3840> in block <Correlation_32>, 	<Madd__n3841_Madd> in block <Correlation_32>, 	<Madd__n3843> in block <Correlation_32>, 	<Madd__n3844_Madd> in block <Correlation_32>, 	<Madd_n2732[1:0]> in block <Correlation_32>, 	<Madd_n2738[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_1311_GND_1_o_add_440_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_1693_GND_1_o_add_566_OUT_Madd1> :
+ 	<Madd__n3877> in block <Correlation_32>, 	<Madd__n3878_Madd> in block <Correlation_32>, 	<Madd__n3882> in block <Correlation_32>, 	<Madd__n3883_Madd> in block <Correlation_32>, 	<Madd__n3879> in block <Correlation_32>, 	<Madd__n3884_Madd> in block <Correlation_32>, 	<Madd__n3887> in block <Correlation_32>, 	<Madd__n3888_Madd> in block <Correlation_32>, 	<Madd__n3890> in block <Correlation_32>, 	<Madd__n3891_Madd> in block <Correlation_32>, 	<Madd__n3894> in block <Correlation_32>, 	<Madd__n3895_Madd> in block <Correlation_32>, 	<Madd__n3897> in block <Correlation_32>, 	<Madd__n3898_Madd> in block <Correlation_32>, 	<Madd_n2918[1:0]> in block <Correlation_32>, 	<Madd_n2924[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_1693_GND_1_o_add_566_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_1502_GND_1_o_add_503_OUT_Madd1> :
+ 	<Madd__n3850> in block <Correlation_32>, 	<Madd__n3851_Madd> in block <Correlation_32>, 	<Madd__n3855> in block <Correlation_32>, 	<Madd__n3856_Madd> in block <Correlation_32>, 	<Madd__n3852> in block <Correlation_32>, 	<Madd__n3857_Madd> in block <Correlation_32>, 	<Madd__n3860> in block <Correlation_32>, 	<Madd__n3861_Madd> in block <Correlation_32>, 	<Madd__n3863> in block <Correlation_32>, 	<Madd__n3864_Madd> in block <Correlation_32>, 	<Madd__n3867> in block <Correlation_32>, 	<Madd__n3868_Madd> in block <Correlation_32>, 	<Madd__n3870> in block <Correlation_32>, 	<Madd__n3871_Madd> in block <Correlation_32>, 	<Madd_n2825[1:0]> in block <Correlation_32>, 	<Madd_n2831[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_1502_GND_1_o_add_503_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_1884_GND_1_o_add_629_OUT_Madd1> :
+ 	<Madd__n3904> in block <Correlation_32>, 	<Madd__n3905_Madd> in block <Correlation_32>, 	<Madd__n3909> in block <Correlation_32>, 	<Madd__n3910_Madd> in block <Correlation_32>, 	<Madd__n3906> in block <Correlation_32>, 	<Madd__n3911_Madd> in block <Correlation_32>, 	<Madd__n3914> in block <Correlation_32>, 	<Madd__n3915_Madd> in block <Correlation_32>, 	<Madd__n3917> in block <Correlation_32>, 	<Madd__n3918_Madd> in block <Correlation_32>, 	<Madd__n3921> in block <Correlation_32>, 	<Madd__n3922_Madd> in block <Correlation_32>, 	<Madd__n3924> in block <Correlation_32>, 	<Madd__n3925_Madd> in block <Correlation_32>, 	<Madd_n3011[1:0]> in block <Correlation_32>, 	<Madd_n3017[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_1884_GND_1_o_add_629_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_2075_GND_1_o_add_692_OUT_Madd1> :
+ 	<Madd__n3931> in block <Correlation_32>, 	<Madd__n3932_Madd> in block <Correlation_32>, 	<Madd__n3936> in block <Correlation_32>, 	<Madd__n3937_Madd> in block <Correlation_32>, 	<Madd__n3933> in block <Correlation_32>, 	<Madd__n3938_Madd> in block <Correlation_32>, 	<Madd__n3941> in block <Correlation_32>, 	<Madd__n3942_Madd> in block <Correlation_32>, 	<Madd__n3944> in block <Correlation_32>, 	<Madd__n3945_Madd> in block <Correlation_32>, 	<Madd__n3948> in block <Correlation_32>, 	<Madd__n3949_Madd> in block <Correlation_32>, 	<Madd__n3951> in block <Correlation_32>, 	<Madd__n3952_Madd> in block <Correlation_32>, 	<Madd_n3104[1:0]> in block <Correlation_32>, 	<Madd_n3110[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_2075_GND_1_o_add_692_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_2266_GND_1_o_add_755_OUT_Madd1> :
+ 	<Madd__n3958> in block <Correlation_32>, 	<Madd__n3959_Madd> in block <Correlation_32>, 	<Madd__n3963> in block <Correlation_32>, 	<Madd__n3964_Madd> in block <Correlation_32>, 	<Madd__n3960> in block <Correlation_32>, 	<Madd__n3965_Madd> in block <Correlation_32>, 	<Madd__n3968> in block <Correlation_32>, 	<Madd__n3969_Madd> in block <Correlation_32>, 	<Madd__n3971> in block <Correlation_32>, 	<Madd__n3972_Madd> in block <Correlation_32>, 	<Madd__n3975> in block <Correlation_32>, 	<Madd__n3976_Madd> in block <Correlation_32>, 	<Madd__n3977> in block <Correlation_32>, 	<Madd__n3979_Madd> in block <Correlation_32>, 	<Madd_n3197[1:0]> in block <Correlation_32>, 	<Madd_n3203[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_2266_GND_1_o_add_755_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_2457_GND_1_o_add_818_OUT_Madd1> :
+ 	<Madd__n3985> in block <Correlation_32>, 	<Madd__n3986_Madd> in block <Correlation_32>, 	<Madd__n3990> in block <Correlation_32>, 	<Madd__n3991_Madd> in block <Correlation_32>, 	<Madd__n3987> in block <Correlation_32>, 	<Madd__n3992_Madd> in block <Correlation_32>, 	<Madd__n3995> in block <Correlation_32>, 	<Madd__n3996_Madd> in block <Correlation_32>, 	<Madd__n3998> in block <Correlation_32>, 	<Madd__n3999_Madd> in block <Correlation_32>, 	<Madd__n4002> in block <Correlation_32>, 	<Madd__n4003_Madd> in block <Correlation_32>, 	<Madd__n4005> in block <Correlation_32>, 	<Madd__n4006_Madd> in block <Correlation_32>, 	<Madd_n3290[1:0]> in block <Correlation_32>, 	<Madd_n3296[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_2457_GND_1_o_add_818_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_2648_GND_1_o_add_881_OUT_Madd1> :
+ 	<Madd__n4012> in block <Correlation_32>, 	<Madd__n4013_Madd> in block <Correlation_32>, 	<Madd__n4017> in block <Correlation_32>, 	<Madd__n4018_Madd> in block <Correlation_32>, 	<Madd__n4014> in block <Correlation_32>, 	<Madd__n4019_Madd> in block <Correlation_32>, 	<Madd__n4022> in block <Correlation_32>, 	<Madd__n4023_Madd> in block <Correlation_32>, 	<Madd__n4025> in block <Correlation_32>, 	<Madd__n4026_Madd> in block <Correlation_32>, 	<Madd__n4029> in block <Correlation_32>, 	<Madd__n4030_Madd> in block <Correlation_32>, 	<Madd__n4032> in block <Correlation_32>, 	<Madd__n4033_Madd> in block <Correlation_32>, 	<Madd_n3383[1:0]> in block <Correlation_32>, 	<Madd_n3389[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_2648_GND_1_o_add_881_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_3030_GND_1_o_add_1007_OUT_Madd1> :
+ 	<Madd__n4066> in block <Correlation_32>, 	<Madd__n4067_Madd> in block <Correlation_32>, 	<Madd__n4071> in block <Correlation_32>, 	<Madd__n4072_Madd> in block <Correlation_32>, 	<Madd__n4068> in block <Correlation_32>, 	<Madd__n4073_Madd> in block <Correlation_32>, 	<Madd__n4076> in block <Correlation_32>, 	<Madd__n4077_Madd> in block <Correlation_32>, 	<Madd__n4079> in block <Correlation_32>, 	<Madd__n4080_Madd> in block <Correlation_32>, 	<Madd__n4083> in block <Correlation_32>, 	<Madd__n4084_Madd> in block <Correlation_32>, 	<Madd__n4086> in block <Correlation_32>, 	<Madd__n4087_Madd> in block <Correlation_32>, 	<Madd_n3569[1:0]> in block <Correlation_32>, 	<Madd_n3575[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_3030_GND_1_o_add_1007_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_2839_GND_1_o_add_944_OUT_Madd1> :
+ 	<Madd__n4039> in block <Correlation_32>, 	<Madd__n4040_Madd> in block <Correlation_32>, 	<Madd__n4044> in block <Correlation_32>, 	<Madd__n4045_Madd> in block <Correlation_32>, 	<Madd__n4041> in block <Correlation_32>, 	<Madd__n4046_Madd> in block <Correlation_32>, 	<Madd__n4049> in block <Correlation_32>, 	<Madd__n4050_Madd> in block <Correlation_32>, 	<Madd__n4052> in block <Correlation_32>, 	<Madd__n4053_Madd> in block <Correlation_32>, 	<Madd__n4056> in block <Correlation_32>, 	<Madd__n4057_Madd> in block <Correlation_32>, 	<Madd__n4059> in block <Correlation_32>, 	<Madd__n4060_Madd> in block <Correlation_32>, 	<Madd_n3476[1:0]> in block <Correlation_32>, 	<Madd_n3482[3:0]_Madd> in block <Correlation_32>, 	<Madd_BUS_2839_GND_1_o_add_944_OUT_Madd> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n36851> :
+ 	<Madd__n3669> in block <Correlation_32>, 	<Madd__n3676> in block <Correlation_32>, 	<Madd__n3683> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n37121> :
+ 	<Madd__n3696> in block <Correlation_32>, 	<Madd__n3703> in block <Correlation_32>, 	<Madd__n3710> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n37391> :
+ 	<Madd__n3723> in block <Correlation_32>, 	<Madd__n3730> in block <Correlation_32>, 	<Madd__n3737> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n37661> :
+ 	<Madd__n3750> in block <Correlation_32>, 	<Madd__n3757> in block <Correlation_32>, 	<Madd__n3764> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n37931> :
+ 	<Madd__n3777> in block <Correlation_32>, 	<Madd__n3784> in block <Correlation_32>, 	<Madd__n3791> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n38201> :
+ 	<Madd__n3804> in block <Correlation_32>, 	<Madd__n3811> in block <Correlation_32>, 	<Madd__n3818> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n38471> :
+ 	<Madd__n3831> in block <Correlation_32>, 	<Madd__n3838> in block <Correlation_32>, 	<Madd__n3845> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n38741> :
+ 	<Madd__n3858> in block <Correlation_32>, 	<Madd__n3865> in block <Correlation_32>, 	<Madd__n3872> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n39011> :
+ 	<Madd__n3885> in block <Correlation_32>, 	<Madd__n3892> in block <Correlation_32>, 	<Madd__n3899> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n39281> :
+ 	<Madd__n3912> in block <Correlation_32>, 	<Madd__n3919> in block <Correlation_32>, 	<Madd__n3926> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n39551> :
+ 	<Madd__n3939> in block <Correlation_32>, 	<Madd__n3946> in block <Correlation_32>, 	<Madd__n3953> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n39821> :
+ 	<Madd__n3966> in block <Correlation_32>, 	<Madd__n3973> in block <Correlation_32>, 	<Madd__n3980> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n40091> :
+ 	<Madd__n3993> in block <Correlation_32>, 	<Madd__n4000> in block <Correlation_32>, 	<Madd__n4007> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n40361> :
+ 	<Madd__n4020> in block <Correlation_32>, 	<Madd__n4027> in block <Correlation_32>, 	<Madd__n4034> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n40631> :
+ 	<Madd__n4047> in block <Correlation_32>, 	<Madd__n4054> in block <Correlation_32>, 	<Madd__n4061> in block <Correlation_32>.
+	The following adders/subtractors are grouped into adder tree <Madd__n40901> :
+ 	<Madd__n4074> in block <Correlation_32>, 	<Madd__n4081> in block <Correlation_32>, 	<Madd__n4088> in block <Correlation_32>.
+Unit <Correlation_32> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adder Trees                                          : 16
+ 6-bit / 23-inputs adder tree                          : 16
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Comparators                                          : 527
+ 1-bit comparator equal                                : 512
+ 6-bit comparator lessequal                            : 15
+# Multiplexers                                         : 28
+ 4-bit 2-to-1 multiplexer                              : 14
+ 6-bit 2-to-1 multiplexer                              : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Correlation_32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Correlation_32, actual ratio is 23.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Correlation_32.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1235
+#      LUT2                        : 289
+#      LUT3                        : 51
+#      LUT4                        : 131
+#      LUT5                        : 133
+#      LUT6                        : 630
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 4
+#      FDC                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 549
+#      IBUF                        : 545
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                 1234  out of   9112    13%  
+    Number used as Logic:              1234  out of   9112    13%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1234
+   Number with an unused Flip Flop:    1234  out of   1234   100%  
+   Number with an unused LUT:             0  out of   1234     0%  
+   Number of fully used LUT-FF pairs:     0  out of   1234     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         550
+ Number of bonded IOBs:                 550  out of    232   237% (*) 
+    IOB Flip Flops/Latches:               4
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 85.831ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 811132318591404 / 8
+-------------------------------------------------------------------------
+Offset:              85.831ns (Levels of Logic = 80)
+  Source:            Target_Num<14> (PAD)
+  Destination:       Out_4_2 (FF)
+  Destination Clock: Clock rising
+
+  Data Path: Target_Num<14> to Out_4_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            48   1.222   1.748  Target_Num_14_IBUF (Target_Num_14_IBUF)
+     LUT4:I1->O            1   0.205   0.924  ADDERTREE_INTERNAL_Madd337_lut<0>1 (ADDERTREE_INTERNAL_Madd337_lut<0>)
+     LUT5:I0->O            4   0.203   0.912  ADDERTREE_INTERNAL_Madd338_lut<0>1 (ADDERTREE_INTERNAL_Madd338_lut<0>)
+     LUT3:I0->O            4   0.205   1.048  ADDERTREE_INTERNAL_Madd338_xor<0>11 (ADDERTREE_INTERNAL_Madd_0338)
+     LUT6:I0->O            2   0.203   0.864  ADDERTREE_INTERNAL_Madd3391 (ADDERTREE_INTERNAL_Madd339)
+     LUT6:I2->O            2   0.203   0.981  ADDERTREE_INTERNAL_Madd339_lut<0>11 (ADDERTREE_INTERNAL_Madd339_lut<0>1)
+     LUT6:I0->O            2   0.203   0.961  ADDERTREE_INTERNAL_Madd339_xor<0>21 (ADDERTREE_INTERNAL_Madd_1339)
+     LUT6:I1->O            3   0.203   0.755  ADDERTREE_INTERNAL_Madd34011 (ADDERTREE_INTERNAL_Madd3401)
+     LUT4:I2->O            1   0.203   0.944  ADDERTREE_INTERNAL_Madd340_lut<0>21 (ADDERTREE_INTERNAL_Madd340_lut<0>2)
+     LUT6:I0->O            3   0.203   1.015  ADDERTREE_INTERNAL_Madd340_xor<0>31 (ADDERTREE_INTERNAL_Madd_2340)
+     LUT6:I0->O            3   0.203   0.898  ADDERTREE_INTERNAL_Madd351_lut<2>1 (ADDERTREE_INTERNAL_Madd351_lut<2>)
+     LUT4:I0->O            3   0.203   1.015  ADDERTREE_INTERNAL_Madd351_xor<2>11 (ADDERTREE_INTERNAL_Madd_2351)
+     LUT6:I0->O            1   0.203   0.808  BUS_3030_BUS_2839_LessThan_1009_o (BUS_3030_BUS_2839_LessThan_1009_o1)
+     LUT3:I0->O            1   0.205   0.827  BUS_3030_BUS_2839_LessThan_1009_o1_SW0 (N132)
+     LUT5:I1->O            8   0.203   1.031  BUS_3030_BUS_2839_LessThan_1009_o1 (BUS_3030_BUS_2839_LessThan_1009_o)
+     LUT3:I0->O            2   0.205   0.961  Mmux_BUS_3030_BUS_2839_mux_1009_OUT11 (BUS_3030_BUS_2839_mux_1009_OUT<0>)
+     LUT6:I1->O            1   0.203   0.827  BUS_3030_BUS_2648_LessThan_1012_o_SW1 (N342)
+     LUT5:I1->O            1   0.203   0.580  BUS_3030_BUS_2648_LessThan_1012_o (BUS_3030_BUS_2648_LessThan_1012_o1)
+     LUT5:I4->O            1   0.205   0.684  BUS_3030_BUS_2648_LessThan_1012_o1_SW4 (N340)
+     LUT5:I3->O            8   0.203   1.147  BUS_3030_BUS_2648_LessThan_1012_o1 (BUS_3030_BUS_2648_LessThan_1012_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_2648_mux_1012_OUT31 (BUS_3030_BUS_2648_mux_1012_OUT<2>)
+     LUT6:I1->O            1   0.203   0.580  BUS_3030_BUS_2457_LessThan_1015_o (BUS_3030_BUS_2457_LessThan_1015_o1)
+     LUT3:I2->O            1   0.205   0.580  BUS_3030_BUS_2457_LessThan_1015_o1_SW0 (N224)
+     LUT6:I5->O            8   0.205   1.147  BUS_3030_BUS_2457_LessThan_1015_o1 (BUS_3030_BUS_2457_LessThan_1015_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_2457_mux_1015_OUT11 (BUS_3030_BUS_2457_mux_1015_OUT<0>)
+     LUT6:I1->O            1   0.203   0.827  BUS_3030_BUS_2266_LessThan_1018_o_SW1 (N344)
+     LUT5:I1->O            1   0.203   0.580  BUS_3030_BUS_2266_LessThan_1018_o (BUS_3030_BUS_2266_LessThan_1018_o1)
+     LUT5:I4->O            1   0.205   0.684  BUS_3030_BUS_2266_LessThan_1018_o1_SW4 (N338)
+     LUT5:I3->O            9   0.203   1.174  BUS_3030_BUS_2266_LessThan_1018_o1 (BUS_3030_BUS_2266_LessThan_1018_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_2266_mux_1018_OUT31 (BUS_3030_BUS_2266_mux_1018_OUT<2>)
+     LUT6:I1->O            1   0.203   0.580  BUS_3030_BUS_2075_LessThan_1021_o (BUS_3030_BUS_2075_LessThan_1021_o1)
+     LUT3:I2->O            1   0.205   0.684  BUS_3030_BUS_2075_LessThan_1021_o1_SW4 (N336)
+     LUT5:I3->O            9   0.203   1.174  BUS_3030_BUS_2075_LessThan_1021_o1 (BUS_3030_BUS_2075_LessThan_1021_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_2075_mux_1021_OUT11 (BUS_3030_BUS_2075_mux_1021_OUT<0>)
+     LUT6:I1->O            1   0.203   0.827  BUS_3030_BUS_1884_LessThan_1024_o_SW1 (N346)
+     LUT5:I1->O            1   0.203   0.580  BUS_3030_BUS_1884_LessThan_1024_o (BUS_3030_BUS_1884_LessThan_1024_o1)
+     LUT5:I4->O            1   0.205   0.684  BUS_3030_BUS_1884_LessThan_1024_o1_SW4 (N334)
+     LUT5:I3->O            9   0.203   1.174  BUS_3030_BUS_1884_LessThan_1024_o1 (BUS_3030_BUS_1884_LessThan_1024_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_1884_mux_1024_OUT31 (BUS_3030_BUS_1884_mux_1024_OUT<2>)
+     LUT6:I1->O            1   0.203   0.580  BUS_3030_BUS_1693_LessThan_1027_o (BUS_3030_BUS_1693_LessThan_1027_o1)
+     LUT3:I2->O            1   0.205   0.684  BUS_3030_BUS_1693_LessThan_1027_o1_SW4 (N332)
+     LUT5:I3->O            9   0.203   1.174  BUS_3030_BUS_1693_LessThan_1027_o1 (BUS_3030_BUS_1693_LessThan_1027_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_1693_mux_1027_OUT11 (BUS_3030_BUS_1693_mux_1027_OUT<0>)
+     LUT6:I1->O            1   0.203   0.827  BUS_3030_BUS_1502_LessThan_1030_o_SW1 (N348)
+     LUT5:I1->O            1   0.203   0.580  BUS_3030_BUS_1502_LessThan_1030_o (BUS_3030_BUS_1502_LessThan_1030_o1)
+     LUT5:I4->O            1   0.205   0.684  BUS_3030_BUS_1502_LessThan_1030_o1_SW4 (N330)
+     LUT5:I3->O           10   0.203   1.201  BUS_3030_BUS_1502_LessThan_1030_o1 (BUS_3030_BUS_1502_LessThan_1030_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_1502_mux_1030_OUT31 (BUS_3030_BUS_1502_mux_1030_OUT<2>)
+     LUT6:I1->O            1   0.203   0.580  BUS_3030_BUS_1311_LessThan_1033_o (BUS_3030_BUS_1311_LessThan_1033_o1)
+     LUT3:I2->O            1   0.205   0.684  BUS_3030_BUS_1311_LessThan_1033_o1_SW4 (N328)
+     LUT5:I3->O           10   0.203   1.201  BUS_3030_BUS_1311_LessThan_1033_o1 (BUS_3030_BUS_1311_LessThan_1033_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_1311_mux_1033_OUT11 (BUS_3030_BUS_1311_mux_1033_OUT<0>)
+     LUT6:I1->O            1   0.203   0.827  BUS_3030_BUS_1120_LessThan_1036_o_SW1 (N350)
+     LUT5:I1->O            1   0.203   0.580  BUS_3030_BUS_1120_LessThan_1036_o (BUS_3030_BUS_1120_LessThan_1036_o1)
+     LUT5:I4->O            1   0.205   0.684  BUS_3030_BUS_1120_LessThan_1036_o1_SW4 (N326)
+     LUT5:I3->O           10   0.203   1.201  BUS_3030_BUS_1120_LessThan_1036_o1 (BUS_3030_BUS_1120_LessThan_1036_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_1120_mux_1036_OUT31 (BUS_3030_BUS_1120_mux_1036_OUT<2>)
+     LUT6:I1->O            1   0.203   0.580  BUS_3030_BUS_0929_LessThan_1039_o (BUS_3030_BUS_0929_LessThan_1039_o1)
+     LUT3:I2->O            1   0.205   0.684  BUS_3030_BUS_0929_LessThan_1039_o1_SW4 (N324)
+     LUT5:I3->O           10   0.203   1.201  BUS_3030_BUS_0929_LessThan_1039_o1 (BUS_3030_BUS_0929_LessThan_1039_o)
+     LUT5:I0->O            3   0.203   0.995  Mmux_BUS_3030_BUS_0929_mux_1039_OUT11 (BUS_3030_BUS_0929_mux_1039_OUT<0>)
+     LUT6:I1->O            1   0.203   0.827  BUS_3030_BUS_0738_LessThan_1042_o_SW1 (N352)
+     LUT5:I1->O            1   0.203   0.580  BUS_3030_BUS_0738_LessThan_1042_o (BUS_3030_BUS_0738_LessThan_1042_o1)
+     LUT5:I4->O            1   0.205   0.684  BUS_3030_BUS_0738_LessThan_1042_o1_SW4 (N322)
+     LUT5:I3->O            9   0.203   1.174  BUS_3030_BUS_0738_LessThan_1042_o1 (BUS_3030_BUS_0738_LessThan_1042_o)
+     LUT5:I0->O            2   0.203   0.961  Mmux_BUS_3030_BUS_0738_mux_1042_OUT31 (BUS_3030_BUS_0738_mux_1042_OUT<2>)
+     LUT6:I1->O            1   0.203   0.580  BUS_3030_BUS_0547_LessThan_1045_o (BUS_3030_BUS_0547_LessThan_1045_o1)
+     LUT3:I2->O            1   0.205   0.684  BUS_3030_BUS_0547_LessThan_1045_o1_SW4 (N320)
+     LUT5:I3->O            8   0.203   1.167  BUS_3030_BUS_0547_LessThan_1045_o1 (BUS_3030_BUS_0547_LessThan_1045_o)
+     LUT6:I0->O            2   0.203   0.981  Mmux_BUS_3030_BUS_0547_mux_1045_OUT21 (BUS_3030_BUS_0547_mux_1045_OUT<1>)
+     LUT6:I0->O            1   0.203   0.580  BUS_3030_BUS_0356_LessThan_1048_o (BUS_3030_BUS_0356_LessThan_1048_o1)
+     LUT5:I4->O            1   0.205   0.684  BUS_3030_BUS_0356_LessThan_1048_o1_SW4 (N318)
+     LUT5:I3->O            6   0.203   1.089  BUS_3030_BUS_0356_LessThan_1048_o1 (BUS_3030_BUS_0356_LessThan_1048_o)
+     LUT5:I0->O            2   0.203   0.981  Mmux_BUS_3030_BUS_0356_mux_1048_OUT21 (BUS_3030_BUS_0356_mux_1048_OUT<1>)
+     LUT6:I0->O            1   0.203   0.000  BUS_3030_BUS_0165_LessThan_1051_o_G (N355)
+     MUXF7:I1->O           2   0.140   0.961  BUS_3030_BUS_0165_LessThan_1051_o (BUS_3030_BUS_0165_LessThan_1051_o1)
+     LUT5:I0->O            1   0.203   0.827  BUS_3030_BUS_0165_LessThan_1051_o13 (BUS_3030_BUS_0165_LessThan_1051_o13)
+     LUT5:I1->O            3   0.203   0.651  BUS_3030_BUS_0165_LessThan_1051_o14 (BUS_3030_BUS_0165_LessThan_1051_o)
+     LUT4:I3->O            2   0.205   0.981  Mmux_PWR_1_o_GND_1_o_mux_1052_OUT411 (Mmux_PWR_1_o_GND_1_o_mux_1052_OUT41)
+     LUT6:I0->O            1   0.203   0.000  Mmux_PWR_1_o_GND_1_o_mux_1052_OUT3 (PWR_1_o_GND_1_o_mux_1052_OUT<2>)
+     FDC:D                     0.102          Out_4_2
+    ----------------------------------------
+    Total                     85.831ns (17.336ns logic, 68.495ns route)
+                                       (20.2% logic, 79.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            Out_4_3 (FF)
+  Destination:       Out_4<3> (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: Out_4_3 to Out_4<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  Out_4_3 (Out_4_3)
+     OBUF:I->O                 2.571          Out_4_3_OBUF (Out_4<3>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.90 secs
+ 
+--> 
+
+Total memory usage is 4536616 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
